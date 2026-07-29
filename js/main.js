@@ -24,9 +24,9 @@ const translations = {
     },
     about: {
       eyebrow: 'Rólam',
-      title: 'Európai fejlesztői alapok, nemzetközi egyetemi környezetben.',
+      title: 'Európai fejlesztői alapok, nemzetközi egyetemi környezetben',
       p1: 'A <strong>Szoftverfejlesztő és Tesztelő szakképesítésemet</strong> Magyarországon, a BMSZC Neumann János Informatikai Technikum ötéves képzésén szereztem 2020 és 2025 között.',
-      p2: 'Jelenleg az RMIT University Vietnam informatikushallgatója vagyok. Full-stack webalkalmazásokon dolgozom, felsőfokú tanulmányaimat pedig a jövőben <strong>kiberbiztonság és hálózati védelem</strong> területén folytatom.',
+      p2: 'Jelenleg az Royal Melbourne Institute of Technology University Vietnam informatikushallgatója vagyok. Full-stack webalkalmazásokon dolgozom, felsőfokú tanulmányaimat pedig a jövőben <strong>kiberbiztonság és hálózati védelem</strong> területén folytatom.',
       tag1: 'Szoftverfejlesztő és Tesztelő',
       tag2: 'Kiberbiztonság és hálózatvédelem',
       languagesLabel: 'Beszélt nyelvek',
@@ -37,7 +37,7 @@ const translations = {
     },
     experience: {
       eyebrow: 'Gyakorlati iskolai tapasztalat',
-      title: 'Programozási projektek és technikai támogatás.',
+      title: 'Programozási projektek és technikai támogatás',
       subtitle: 'Különböző iskolai környezetekben szereztem tapasztalatot csoportos fejlesztésben, informatikai korrepetálásban, rendezvénytechnikában és technikai támogatásban.',
       neumann: {
         intro: 'Az ötéves képzés minden tanévében általában öt programozási projektet készítettünk csoportosan.',
@@ -55,7 +55,7 @@ const translations = {
     },
     skills: {
       eyebrow: 'Technikai készségek',
-      title: 'Fejlesztés, adatkezelés és kreatív eszközök.',
+      title: 'Fejlesztés, adatkezelés és kreatív eszközök',
       subtitle: 'Technológiák és alkalmazások, amelyeket fejlesztéshez, tanuláshoz és digitális tartalomkészítéshez használok.',
       programming: { title: 'Programozás és web', text: 'Szoftverfejlesztés és reszponzív webes megoldások.' },
       data: { title: 'Adatbázisok és fejlesztői eszközök', text: 'Adatkezelés, verziókövetés és fejlesztői munkafolyamatok.' },
@@ -64,7 +64,7 @@ const translations = {
     },
     credentials: {
       eyebrow: 'Tanúsítványok és képzések',
-      title: 'Mit takar az ECDL IT Security és az ötéves szakképzés?',
+      title: 'ECDL IT és az ötéves szakképzés',
       subtitle: 'A tanúsítvány és a szakképesítés mögötti gyakorlati tudás röviden és érthetően.',
       ecdl: {
         label: 'Tanúsítvány · 2023',
@@ -144,7 +144,7 @@ const translations = {
     contact: { eyebrow: 'Kapcsolat', title: 'Dolgozzunk együtt.', text: 'Nyitott vagyok gyakornoki és junior fejlesztői lehetőségekre Ho Si Minh-városban vagy távmunkában. Keress meg LinkedInen.', linkedin: 'LinkedIn-profil megnyitása' },
     footer: { rights: 'Minden jog fenntartva.' },
     terminal: [
-      { cmd: 'whoami', out: 'Molnár Márk — informatikushallgató @ RMIT Vietnam' },
+      { cmd: 'whoami', out: 'Molnár Márk — informatikushallgató @ Royal Melbourne Institute of Technology Vietnam' },
       { cmd: 'cat focus.txt', out: 'Jövőbeli irány: Kiberbiztonság és hálózati védelem' },
       { cmd: 'cat qualifications.txt', out: 'Szoftverfejlesztő és Tesztelő (2025), ECDL IT Security' },
       { cmd: 'status', out: 'Nyitott gyakornoki és junior fejlesztői lehetőségekre' }
@@ -153,7 +153,7 @@ const translations = {
   en: {
     meta: {
       title: 'Mark Molnar – Portfolio',
-      description: 'Portfolio of Mark Molnar, an IT student at RMIT University Vietnam with a Software Developer and Tester qualification and future studies focused on Cybersecurity and Network Defense.'
+      description: 'Portfolio of Mark Molnar, an IT student at Royal Melbourne Institute of Technology University Vietnam with a Software Developer and Tester qualification and future studies focused on Cybersecurity and Network Defense.'
     },
     language: { label: 'Language selector' },
     nav: { about: 'About', skills: 'Skills', credentials: 'Qualifications', projects: 'Projects', contact: 'Contact', toggle: 'Open navigation', close: 'Close navigation' },
@@ -177,7 +177,7 @@ const translations = {
       eyebrow: 'About me',
       title: 'European development foundations in an international university environment.',
       p1: 'I earned my <strong>Software Developer and Tester qualification</strong> in Hungary through the five-year programme at BMSZC Neumann János Informatikai Technikum between 2020 and 2025.',
-      p2: 'I am currently an IT undergraduate at RMIT University Vietnam and work on full-stack web applications. I plan to continue my higher education in <strong>Cybersecurity and Network Defense</strong>.',
+      p2: 'I am currently an IT undergraduate at Royal Melbourne Institute of Technology University Vietnam and work on full-stack web applications. I plan to continue my higher education in <strong>Cybersecurity and Network Defense</strong>.',
       tag1: 'Software Developer and Tester',
       tag2: 'Cybersecurity & Network Defense',
       languagesLabel: 'Languages',
@@ -188,7 +188,7 @@ const translations = {
     },
     experience: {
       eyebrow: 'Practical school experience',
-      title: 'Programming projects and technical support.',
+      title: 'Programming projects and technical support',
       subtitle: 'I gained experience in collaborative development, peer tutoring, event technology, and IT support across different school environments.',
       neumann: {
         intro: 'During each year of the five-year programme, we usually completed five programming projects in groups.',
@@ -206,7 +206,7 @@ const translations = {
     },
     skills: {
       eyebrow: 'Technical skills',
-      title: 'Development, data and creative tools.',
+      title: 'Development, data and creative tools',
       subtitle: 'Technologies and applications I use for development, learning and digital content creation.',
       programming: { title: 'Programming & web', text: 'Software development and responsive web solutions.' },
       data: { title: 'Databases & developer tools', text: 'Data management, version control and development workflows.' },
@@ -215,7 +215,7 @@ const translations = {
     },
     credentials: {
       eyebrow: 'Certificates & qualifications',
-      title: 'What do ECDL IT Security and the five-year programme cover?',
+      title: 'ECDL IT  nd the five-year programme',
       subtitle: 'A clear overview of the practical knowledge behind the certificate and qualification.',
       ecdl: {
         label: 'Certificate · 2023',
