@@ -9,7 +9,7 @@ const translations = {
     hero: {
       eyebrow: 'Molnár Márk · Informatikushallgató @ RMIT Vietnam',
       title1: 'Full-stack webes megoldások,',
-      title2: 'biztonságtudatos szemlélettel.',
+      title2: 'biztonságtudatos szemlélettel',
       description: 'Modern webalkalmazásokat építek az ötéves magyarországi <strong>Szoftverfejlesztő és Tesztelő képzésem</strong> alapjaira támaszkodva. Felsőfokú tanulmányaimat a jövőben <strong>kiberbiztonság és hálózati védelem</strong> területén folytatom.',
       projects: 'Projektek megtekintése',
       linkedin: 'Kapcsolódás LinkedInen',
@@ -19,7 +19,7 @@ const translations = {
       scroll: 'GÖRGESS'
     },
     profile: {
-      subtitle: 'IT hallgató · Full-stack fejlesztő',
+      subtitle: 'IT-hallgató · Full-stack fejlesztő',
       code: '<span class="code-k">const</span> <span class="code-v">developer</span> = {<br>&nbsp;&nbsp;név: <span class="code-s">\'Molnár Márk\'</span>,<br>&nbsp;&nbsp;szerep: <span class="code-s">\'Junior fejlesztő / IT hallgató\'</span>,<br>&nbsp;&nbsp;egyetem: <span class="code-s">\'RMIT University Vietnam\'</span>,<br>&nbsp;&nbsp;tervezettSzak: <span class="code-s">\'Kiberbiztonság és hálózati védelem\'</span>,<br>&nbsp;&nbsp;technológiák: [<span class="code-s">\'Python\'</span>, <span class="code-s">\'C#\'</span>, <span class="code-s">\'Java\'</span>, <span class="code-s">\'PHP\'</span>, <span class="code-s">\'JS\'</span>, <span class="code-s">\'SQL\'</span>],<br>&nbsp;&nbsp;státusz: <span class="code-s">\'Nyitott gyakornoki és junior lehetőségekre\'</span><br>};'
     },
     about: {
