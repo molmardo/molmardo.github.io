@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mark Molnar - Portfolio</title>
+<meta name="description" content="Portfolio of Mark Molnar. IT Student at RMIT University Vietnam & Full-Stack Developer with a certified European engineering background. Python, C#, PHP, JS, SQL, Cybersecurity.">
+
+<!-- ===== Fonts ===== -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- ===== FontAwesome 6 ===== -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- ===== Three.js r128 ===== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<!-- ===== GSAP + ScrollTrigger ===== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="bg-canvas"></canvas>
+<div class="bg-fade"></div>
+<div class="noise-overlay"></div>
+
+<header class="navbar" id="navbar">
+  <div class="wrap nav-inner">
+    <a href="#top" class="logo"><span class="bracket">&lt;</span>mark_molnar<span class="bracket">/&gt;</span><span class="cursor"></span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" data-nav>About</a>
+      <a href="#skills" data-nav>Skills</a>
+      <a href="#projects" data-nav>Projects</a>
+      <a href="#contact" data-nav>Contact</a>
+      <a href="https://www.linkedin.com/in/molmardo/" target="_blank" rel="noopener" class="nav-cta nav-cta-mobile">
+        <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+      </a>
+    </nav>
+    <a href="https://www.linkedin.com/in/molmardo/" target="_blank" rel="noopener" class="nav-cta" id="navCtaDesktop">
+      <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+</header>
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+        <div class="hero-left">
+      <p class="eyebrow">Mark Molnar · IT Student @ RMIT Vietnam</p>
+      <h1 class="hero-title">
+        <span class="line"><span>Full-stack web solutions,</span></span>
+        <span class="line"><span class="accent">engineered with security in mind.</span></span>
+      </h1>
+      <p class="hero-desc">
+        I build production-ready web applications with a certified <strong>European software engineering background</strong>. 
+        Currently pursuing my major in <strong>Software Engineering & Cybersecurity</strong> at RMIT University Vietnam.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-diagram-project"></i> View Projects</a>
+        <a href="https://www.linkedin.com/in/molmardo/" target="_blank" rel="noopener" class="btn btn-ghost"><i class="fa-brands fa-linkedin-in"></i> Connect on LinkedIn</a>
+      </div>
+      <div class="hero-meta">
+        <div class="hero-meta-item"><span class="num">Python / C# / PHP</span><span class="label">Primary Stack</span></div>
+        <div class="hero-meta-item"><span class="num">RMIT VN</span><span class="label">University</span></div>
+        <div class="hero-meta-item"><span class="num">HU → VN</span><span class="label">European Foundation</span></div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="profile-3d-card glass tilt-card">
+        <div class="profile-card-inner">
+          <div class="profile-avatar-row">
+            <div class="avatar-box">
+              <i class="fa-solid fa-user-gear"></i>
+            </div>
+            <div class="profile-name-tag">
+              <h3>Mark Molnar</h3>
+              <p>molnarmark2005@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="code-box">
+            <span class="code-k">const</span> <span class="code-v">developer</span> = {<br>
+            &nbsp;&nbsp;name: <span class="code-s">'Mark Molnar'</span>,<br>
+            &nbsp;&nbsp;role: <span class="code-s">'Junior Developer / IT Student'</span>,<br>
+            &nbsp;&nbsp;education: <span class="code-s">'RMIT Vietnam (Software & Security)'</span>,<br>
+            &nbsp;&nbsp;origin: <span class="code-s">'Hungary (BMSZC Neumann)'</span>,<br>
+            &nbsp;&nbsp;languages: [<span class="code-s">'Python'</span>, <span class="code-s">'C#'</span>, <span class="code-s">'PHP'</span>, <span class="code-s">'JS'</span>, <span class="code-s">'SQL'</span>],<br>
+            &nbsp;&nbsp;status: <span class="code-s">'Open for Intern / Junior Roles 🚀'</span><br>
+            };
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="scroll-cue"><span>SCROLL</span><span class="stem"></span></div>
+</section>
+
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div>
+        <p class="eyebrow">About Me</p>
+        <h2 class="section-title">Certified European engineering foundation, applied in Vietnam.</h2>
+        <div class="about-text" style="margin-top:26px;">
+          <p>My name is <strong>Mark Molnar</strong>. I am an IT undergraduate at <strong>RMIT University Vietnam</strong> with a certified technical diploma from Hungary (BMSZC Neumann János Informatikai Technikum).</p>
+          <p>I specialize in building full-stack web applications (PHP, MySQL, HTML/CSS, JS) and object-oriented backend solutions in Python and C#. I also bring a strong curiosity and practical approach to <strong>Cybersecurity and Network Defense</strong>.</p>
+        </div>
+        <div class="about-tags">
+          <span>RMIT Vietnam</span>
+          <span>Certified Software Developer</span>
+          <span>Full-Stack Web</span>
+          <span>Network & Security Basics</span>
+        </div>
+      </div>
+
+      <div class="terminal glass" data-tilt-ignore>
+        <div class="terminal-bar">
+          <span class="terminal-dot"></span><span class="terminal-dot"></span><span class="terminal-dot"></span>
+          <span class="terminal-title">mark_molnar — zsh</span>
+        </div>
+        <div class="terminal-body" id="terminalBody">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Skills ============ -->
+<section class="section" id="skills">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Technical Skills</p>
+      <h2 class="section-title">Languages, databases, and security fundamentals.</h2>
+      <p class="section-sub">Tools and platforms I use to design, build, and test applications.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card glass tilt-card">
+        <div class="icon"><i class="fa-solid fa-code"></i></div>
+        <h3>Programming & Web</h3>
+        <p>Core software development and responsive web engineering.</p>
+        <div class="skill-tags">
+          <span><i class="fa-brands fa-python"></i> Python</span>
+          <span><i class="fa-solid fa-hashtag"></i> C#</span>
+          <span><i class="fa-brands fa-php"></i> PHP</span>
+          <span><i class="fa-brands fa-square-js"></i> JavaScript</span>
+          <span><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+        </div>
+      </div>
+
+      <div class="skill-card glass tilt-card">
+        <div class="icon"><i class="fa-solid fa-database"></i></div>
+        <h3>Databases & Tools</h3>
+        <p>Data administration, version control, and IDE workflow.</p>
+        <div class="skill-tags">
+          <span><i class="fa-solid fa-database"></i> MySQL</span>
+          <span><i class="fa-solid fa-server"></i> phpMyAdmin</span>
+          <span><i class="fa-brands fa-github"></i> Git & GitHub</span>
+          <span><i class="fa-solid fa-code"></i> VS Code</span>
+        </div>
+      </div>
+
+      <div class="skill-card glass tilt-card">
+        <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3>Security & Certificates</h3>
+        <p>Certified IT proficiency and network defense concepts.</p>
+        <div class="skill-tags">
+          <span><i class="fa-solid fa-certificate"></i> Software Dev Cert (2025)</span>
+          <span><i class="fa-solid fa-award"></i> ECDL / IT Security</span>
+          <span><i class="fa-solid fa-network-wired"></i> Network Fundamentals</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="projects">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Featured Work</p>
+      <h2 class="section-title">Freelance & Academic Projects</h2>
+      <p class="section-sub">Real-world commercial builds and web systems developed and deployed by Mark Molnar.</p>
+    </div>
+
+    <div class="projects-list">
+
+      <article class="project-card glass tilt-card">
+        <div class="project-visual"><i class="fa-solid fa-globe"></i></div>
+        <div class="project-body">
+          <span class="project-tag">Freelance Commercial Web Platform</span>
+          <h3>rdr2003.hu</h3>
+          <p>A responsive, production-deployed commercial platform built using HTML, CSS, PHP, and MySQL. Features multi-language options, transactional mail handling, and structured database management.</p>
+          <div class="project-stack">
+            <span>PHP</span><span>MySQL</span><span>HTML/CSS</span><span>SEO</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass tilt-card">
+        <div class="project-visual"><i class="fa-solid fa-shop"></i></div>
+        <div class="project-body">
+          <span class="project-tag">Freelance Business Web Application</span>
+          <h3>saigonandmore.hu</h3>
+          <p>A full-stack business web platform designed and deployed for commercial operations, focusing on backend PHP logic, clean UI layout, and database synchronization.</p>
+          <div class="project-stack">
+            <span>PHP</span><span>MySQL</span><span>Bootstrap</span><span>UI Design</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass tilt-card">
+        <div class="project-visual"><i class="fa-solid fa-utensils"></i></div>
+        <div class="project-body">
+          <span class="project-tag">Relational Web Application</span>
+          <h3>Family Meal Planner</h3>
+          <p>A custom relational database application that generates non-repeating weekly meal plans for households, utilizing SQL algorithms to map meals, ingredients, and history.</p>
+          <div class="project-stack">
+            <span>SQL</span><span>PHP</span><span>Relational Modeling</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="contact-panel glass">
+      <p class="eyebrow" style="justify-content:center;">Get In Touch</p>
+      <h2 class="section-title">Let's work together.</h2>
+      <p class="section-sub">Open for Internship and Junior Developer opportunities in Ho Chi Minh City or Remote. Reach out directly via email or LinkedIn.</p>
+      <div class="contact-actions">
+        <a href="mailto:molnarmark2005@gmail.com" class="btn btn-primary">
+          <i class="fa-solid fa-envelope"></i> Send Email
+        </a>
+        <a href="https://www.linkedin.com/in/molmardo/" target="_blank" rel="noopener" class="btn btn-ghost">
+          <i class="fa-brands fa-linkedin-in"></i> LinkedIn Profile
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p>&copy; <span id="year"></span> Mark Molnar (molmardo). All rights reserved.</p>
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/in/molmardo/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="mailto:molnarmark2005@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
