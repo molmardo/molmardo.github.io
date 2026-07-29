@@ -83,11 +83,63 @@ const translations = {
     },
     projects: {
       eyebrow: 'Kiemelt munkák',
-      title: 'Szabadúszó és tanulmányi projektek',
-      subtitle: 'Valós üzleti weboldalak és saját fejlesztésű webes rendszerek.',
-      rdr: { tag: 'Szabadúszó üzleti webplatform', text: 'Reszponzív, éles környezetben működő üzleti webplatform HTML, CSS, PHP és MySQL alapokon. Többnyelvű felületet, tranzakciós levélküldést és strukturált adatbázis-kezelést tartalmaz.' },
-      saigon: { tag: 'Szabadúszó üzleti webalkalmazás', text: 'Kereskedelmi működésre tervezett és telepített full-stack webplatform, szerveroldali PHP logikával, letisztult felülettel és adatbázis-szinkronizációval.' },
-      meal: { tag: 'Relációs webalkalmazás', title: 'Családi étkezéstervező', text: 'Egyedi relációs adatbázis-alkalmazás, amely ismétlésmentes heti étkezési terveket készít háztartások számára, és SQL-algoritmusokkal kapcsolja össze az ételeket, alapanyagokat és az előzményeket.', stack: 'Relációs modellezés' }
+      title: 'Éles, önálló és csapatban készített projektek',
+      subtitle: 'Üzleti webplatformok, önálló fejlesztések és technikumi projektmunkák többféle technológiai területről.',
+      groups: { production: 'Éles és szabadúszó projektek', development: 'Önálló és iskolai fejlesztések' },
+      links: { website: 'Élő weboldal', repository: 'GitHub-repó' },
+      rdr: {
+        tag: 'Szabadúszó üzleti webplatform',
+        text: 'Reszponzív, éles környezetben működő üzleti webplatform HTML, CSS, PHP, JavaScript és MySQL alapokon. Többnyelvű felületet, tranzakciós levélküldést és strukturált adatbázis-kezelést tartalmaz.'
+      },
+      saigon: {
+        tag: 'Szabadúszó / éles projekt',
+        point1: 'Kereskedelmi működésre tervezett és sikeresen élesített webplatform szerveroldali PHP-logikával és optimalizált adatbázis-architektúrával.',
+        point2: 'Letisztult, teljesen reszponzív felhasználói felület Bootstrap és egyedi CSS használatával.',
+        point3: 'Gördülékeny adatbázis-szinkronizáció és dinamikus adatkiszolgálás a háttérrendszerek között.'
+      },
+      citrom: {
+        tag: 'Egyedi weboldal',
+        point1: 'Az első összetett, nagyléptékű webes projektem teljes körű tervezése és kivitelezése a specifikációtól az élesítésig.',
+        point2: 'Saját, strukturált kódbázis kialakítása.',
+        point3: 'Reszponzív elrendezés és átlátható navigációs architektúra a hatékony felhasználói élmény érdekében.'
+      },
+      rubberduck: {
+        tag: 'Önálló fejlesztés / nyílt projekt',
+        point1: 'Egyedi Discord bot tervezése és fejlesztése Python alapon, eseményvezérelt és aszinkron architektúrával.',
+        point2: 'Dinamikus magyar–angol nyelvváltás egyetlen felhasználói paranccsal.',
+        point3: 'Parancsértelmezési logika, hibakezelés és állapotkezelés kidolgozása a gördülékeny felhasználói élményért.'
+      },
+      vision: {
+        tag: 'Iskolai / önálló Python-projekt',
+        title: 'Valós idejű számítógépes látás és arcfelismerés',
+        point1: 'Valós idejű videóstream- és képfeldolgozó alkalmazás fejlesztése Python és OpenCV használatával.',
+        point2: 'Haar Cascade-alapú arcdetektálás, kijelölés és automatikus létszámlálás.',
+        point3: 'Saját konvolúciós mátrixok és NumPy-műveletek dinamikus szűréshez, élkiemeléshez és elmosáshoz.',
+        point4: 'Szelektív régióhomályosítás a háttér anonimizálására az észlelt arcok megtartása mellett.',
+        point5: 'Billentyűzet-vezérelt GUI, valós idejű FPS- és HUD-kijelzés, valamint pillanatkép-készítés.'
+      },
+      loligochi: {
+        tag: 'Iskolai projekt / privát repó',
+        title: 'C# virtuális kisállat-játék',
+        point1: 'Virtuális kisállat-nevelő játék tervezése és fejlesztése objektumorientált elvek és állapotgép alkalmazásával.',
+        point2: 'Az éhség, jókedv és energia dinamikus követése, időalapú események és interaktív visszajelzések megvalósítása.',
+        point3: 'Átlátható grafikus felület és állapotfüggő logikai folyamatok kialakítása.'
+      },
+      travel: {
+        tag: 'Iskolai projekt / privát repó',
+        title: 'Utazástervező és foglalási webplatform',
+        point1: 'Komplex utazási és foglalási weboldal koncepciójának megtervezése, prototípus-készítése és interaktív fejlesztése.',
+        point2: 'Dinamikus szűrési és megjelenítési funkciók az utazási csomagok és információk áttekinthető bemutatásához.',
+        point3: 'Reszponzív, felhasználóbarát kezelőfelület kialakítása Bootstrap segítségével.'
+      },
+      hardware: {
+        tag: 'Iskolai csapatprojekt / privát repó',
+        title: 'Informatikai hardverportál',
+        point1: 'Számítógépes hardverösszetevőket bemutató, többoldalas ismeretterjesztő webplatform fejlesztése agilis csapatmunkában.',
+        point2: 'Strukturált, moduláris elrendezés és konzisztens dizájnrendszer a hatékony csapaton belüli feladatelosztás érdekében.',
+        point3: 'Kiemelt iskolai elismerés a látványos megvalósításért, a pontos felépítésért és az átgondolt elrendezésért.',
+        teamwork: 'Csapatmunka'
+      }
     },
     contact: { eyebrow: 'Kapcsolat', title: 'Dolgozzunk együtt.', text: 'Nyitott vagyok gyakornoki és junior fejlesztői lehetőségekre Ho Si Minh-városban vagy távmunkában. Keress meg LinkedInen.', linkedin: 'LinkedIn-profil megnyitása' },
     footer: { rights: 'Minden jog fenntartva.' },
@@ -182,11 +234,63 @@ const translations = {
     },
     projects: {
       eyebrow: 'Featured work',
-      title: 'Freelance & academic projects',
-      subtitle: 'Real-world business websites and independently developed web systems.',
-      rdr: { tag: 'Freelance business web platform', text: 'A responsive, production-deployed business web platform built with HTML, CSS, PHP and MySQL. It includes multilingual options, transactional email handling and structured database management.' },
-      saigon: { tag: 'Freelance business web application', text: 'A full-stack web platform designed and deployed for commercial operations, with server-side PHP logic, a clean interface and database synchronization.' },
-      meal: { tag: 'Relational web application', title: 'Family Meal Planner', text: 'A custom relational database application that creates non-repeating weekly meal plans for households, using SQL algorithms to connect meals, ingredients and history.', stack: 'Relational modeling' }
+      title: 'Production, individual and team projects',
+      subtitle: 'Business web platforms, independent developments and technical-school projects across multiple technology areas.',
+      groups: { production: 'Production and freelance projects', development: 'Independent and academic development' },
+      links: { website: 'Live website', repository: 'GitHub repository' },
+      rdr: {
+        tag: 'Freelance business web platform',
+        text: 'A responsive, production-deployed business web platform built with HTML, CSS, PHP, JavaScript and MySQL. It includes multilingual options, transactional email handling and structured database management.'
+      },
+      saigon: {
+        tag: 'Freelance / production project',
+        point1: 'Designed for commercial operation and successfully deployed, with server-side PHP logic and an optimized database architecture.',
+        point2: 'Created a clean, fully responsive interface using Bootstrap and custom CSS.',
+        point3: 'Implemented reliable database synchronization and dynamic data delivery between backend systems.'
+      },
+      citrom: {
+        tag: 'Custom website',
+        point1: 'Planned and delivered my first complex, large-scale web project from specification through production deployment.',
+        point2: 'Built a custom, structured codebase.',
+        point3: 'Implemented a responsive layout and clear navigation architecture to support an efficient user experience.'
+      },
+      rubberduck: {
+        tag: 'Independent development / open project',
+        point1: 'Designed and developed a custom Discord bot in Python using an event-driven, asynchronous architecture.',
+        point2: 'Implemented dynamic Hungarian–English language switching through a single user command.',
+        point3: 'Built command parsing, error handling and state management for a smooth user experience.'
+      },
+      vision: {
+        tag: 'Academic / independent Python project',
+        title: 'Real-time computer vision and face detection',
+        point1: 'Developed a real-time video-stream and image-processing application with Python and OpenCV.',
+        point2: 'Integrated Haar Cascade-based face detection, visual marking and automatic person counting.',
+        point3: 'Applied custom convolution kernels and NumPy operations for dynamic filtering, edge enhancement and blur effects.',
+        point4: 'Implemented selective region blurring to anonymize the background while preserving detected faces.',
+        point5: 'Created a keyboard-controlled GUI with real-time FPS and HUD display plus snapshot capture.'
+      },
+      loligochi: {
+        tag: 'Academic project / private repository',
+        title: 'C# virtual pet game',
+        point1: 'Designed and developed a virtual pet game using object-oriented principles and a state-machine architecture.',
+        point2: 'Implemented dynamic tracking of hunger, happiness and energy, time-based events and interactive feedback.',
+        point3: 'Created a clear graphical interface and state-dependent logic flows.'
+      },
+      travel: {
+        tag: 'Academic project / private repository',
+        title: 'Travel planning and booking web platform',
+        point1: 'Designed, prototyped and interactively developed the concept for a complex travel and booking website.',
+        point2: 'Built dynamic filtering and display features for presenting travel packages and information clearly.',
+        point3: 'Created a responsive, user-friendly interface with Bootstrap.'
+      },
+      hardware: {
+        tag: 'Academic team project / private repository',
+        title: 'Computer hardware portal',
+        point1: 'Developed a multi-page educational web platform about computer hardware components in an agile team.',
+        point2: 'Created a structured, modular layout and consistent design system to support efficient task distribution within the team.',
+        point3: 'Received special recognition at school for its visual execution, precise structure and thoughtful layout.',
+        teamwork: 'Teamwork'
+      }
     },
     contact: { eyebrow: 'Get in touch', title: 'Let\'s work together.', text: 'I am open to internship and junior developer opportunities in Ho Chi Minh City or remotely. Connect with me on LinkedIn.', linkedin: 'Open LinkedIn profile' },
     footer: { rights: 'All rights reserved.' },
