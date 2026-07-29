@@ -720,6 +720,10 @@ button:focus-visible,
     margin-top: 30px;
 }
 
+.experience-grid-three {
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .experience-item {
     padding: 8px 28px;
     border-right: 1px solid var(--border-glass);
@@ -1190,6 +1194,10 @@ button:focus-visible,
     }
 
     .experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-grid-three {
         grid-template-columns: 1fr;
     }
 

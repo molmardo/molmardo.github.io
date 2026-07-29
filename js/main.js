@@ -38,11 +38,12 @@ const translations = {
     experience: {
       eyebrow: 'Gyakorlati iskolai tapasztalat',
       title: 'Programozási projektek és technikai támogatás.',
-      subtitle: 'Különböző iskolai környezetekben szereztem tapasztalatot csoportos fejlesztésben, rendezvénytechnikában és informatikai támogatásban.',
+      subtitle: 'Különböző iskolai környezetekben szereztem tapasztalatot csoportos fejlesztésben, informatikai korrepetálásban, rendezvénytechnikában és technikai támogatásban.',
       neumann: {
         intro: 'Az ötéves képzés minden tanévében általában öt programozási projektet készítettünk csoportosan.',
         projects: { title: 'Évi körülbelül öt projekt', text: 'A rendszeres projektfeladatok elsősorban programozási problémák közös megoldására épültek.' },
-        teamwork: { title: 'Csoportos fejlesztés', text: 'A feladatokat csapatban terveztük, osztottuk fel és valósítottuk meg.' }
+        teamwork: { title: 'Csoportos fejlesztés', text: 'A feladatokat csapatban terveztük, osztottuk fel és valósítottuk meg.' },
+        tutoring: { title: 'Informatikai korrepetálás', text: 'A heti több informatikai óra – programozás, hálózati ismeretek, digitális kultúra, informatikai alapok és projektmunka – anyagából rendszeresen korrepetáltam osztálytársaimat. Több társamat az informatikaérettségire is én készítettem fel.' }
       },
       primary: {
         date: 'Általános iskolai időszak',
@@ -136,11 +137,12 @@ const translations = {
     experience: {
       eyebrow: 'Practical school experience',
       title: 'Programming projects and technical support.',
-      subtitle: 'I gained experience in collaborative development, event technology, and IT support across different school environments.',
+      subtitle: 'I gained experience in collaborative development, peer tutoring, event technology, and IT support across different school environments.',
       neumann: {
         intro: 'During each year of the five-year programme, we usually completed five programming projects in groups.',
         projects: { title: 'Around five projects per year', text: 'The recurring assignments primarily focused on solving programming problems collaboratively.' },
-        teamwork: { title: 'Collaborative development', text: 'We planned, divided, and implemented the assignments as a team.' }
+        teamwork: { title: 'Collaborative development', text: 'We planned, divided, and implemented the assignments as a team.' },
+        tutoring: { title: 'Peer tutoring and exam preparation', text: 'I regularly tutored classmates across our weekly IT subjects, including programming, networking, digital culture, IT fundamentals, and project work. I also prepared several classmates for the Hungarian IT school-leaving examination.' }
       },
       primary: {
         date: 'Elementary school years',
