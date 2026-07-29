@@ -64,14 +64,21 @@ const translations = {
     },
     credentials: {
       eyebrow: 'Tanúsítványok és képzések',
-      title: 'ECDL IT és az ötéves szakképzés',
+      title: 'ECDL és az ötéves szakképzés',
       subtitle: 'A tanúsítvány és a szakképesítés mögötti gyakorlati tudás röviden és érthetően.',
       ecdl: {
         label: 'Tanúsítvány · 2023',
-        text: 'Az ECDL IT Security tanúsítvány az informatikai biztonság alapjainak ismeretét igazolja: a digitális fenyegetések és kártevők felismerését, a hálózatok biztonságos használatát, valamint az adatok, fiókok és eszközök megfelelő védelmét.',
-        topic1: 'Digitális fenyegetések',
-        topic2: 'Hálózati biztonság',
-        topic3: 'Adat- és fiókvédelem'
+        title: 'ECDL · European Computer Driving Licence',
+        text: 'Az ECDL (European Computer Driving Licence) egységes európai számítógép-használói tanúsítvány, amely a felhasználói informatikai ismereteket és a digitális írástudást igazolja. A program a számítógép és az alapvető digitális alkalmazások magabiztos, gyakorlati használatára épül.',
+        ict: 'IKT-alapismeretek',
+        os: 'Operációs rendszerek',
+        word: 'Szövegszerkesztés',
+        spreadsheets: 'Táblázatkezelés',
+        databases: 'Adatbázis-kezelés',
+        presentations: 'Prezentáció',
+        communication: 'Információ és kommunikáció',
+        images: 'Képszerkesztés',
+        web: 'Webkezdő'
       },
       fullstack: {
         label: 'Ötéves képzés · 2020–2025',
@@ -146,7 +153,7 @@ const translations = {
     terminal: [
       { cmd: 'whoami', out: 'Molnár Márk — informatikushallgató @ Royal Melbourne Institute of Technology Vietnam' },
       { cmd: 'cat focus.txt', out: 'Jövőbeli irány: Kiberbiztonság és hálózati védelem' },
-      { cmd: 'cat qualifications.txt', out: 'Szoftverfejlesztő és Tesztelő (2025), ECDL IT Security' },
+      { cmd: 'cat qualifications.txt', out: 'Szoftverfejlesztő és Tesztelő (2025), ECDL (2023)' },
       { cmd: 'status', out: 'Nyitott gyakornoki és junior fejlesztői lehetőségekre' }
     ]
   },
@@ -215,14 +222,21 @@ const translations = {
     },
     credentials: {
       eyebrow: 'Certificates & qualifications',
-      title: 'ECDL IT  nd the five-year programme',
+      title: 'ECDL and the five-year programme',
       subtitle: 'A clear overview of the practical knowledge behind the certificate and qualification.',
       ecdl: {
         label: 'Certificate · 2023',
-        text: 'The ECDL IT Security certificate demonstrates knowledge of information security fundamentals: recognising digital threats and malware, using networks safely, and protecting data, accounts, and devices.',
-        topic1: 'Digital threats',
-        topic2: 'Network security',
-        topic3: 'Data & account protection'
+        title: 'ECDL · European Computer Driving Licence',
+        text: 'The ECDL (European Computer Driving Licence) is a standardized European computer-user certification that demonstrates practical digital literacy and user-level IT skills. The programme focuses on confident, effective use of computers and essential digital applications.',
+        ict: 'ICT fundamentals',
+        os: 'Operating systems',
+        word: 'Word processing',
+        spreadsheets: 'Spreadsheets',
+        databases: 'Database management',
+        presentations: 'Presentations',
+        communication: 'Information and communication',
+        images: 'Image editing',
+        web: 'Web basics'
       },
       fullstack: {
         label: 'Five-year programme · 2020–2025',
@@ -297,7 +311,7 @@ const translations = {
     terminal: [
       { cmd: 'whoami', out: 'Mark Molnar — IT Student @ RMIT Vietnam' },
       { cmd: 'cat focus.txt', out: 'Future direction: Cybersecurity and Network Defense' },
-      { cmd: 'cat qualifications.txt', out: 'Software Developer and Tester (2025), ECDL IT Security' },
+      { cmd: 'cat qualifications.txt', out: 'Software Developer and Tester (2025), ECDL (2023)' },
       { cmd: 'status', out: 'Open to internship and junior developer opportunities' }
     ]
   }
