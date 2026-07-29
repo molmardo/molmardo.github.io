@@ -2,7 +2,7 @@ const translations = {
   hu: {
     meta: {
       title: 'Molnár Márk – Portfólió',
-      description: 'Molnár Márk portfóliója. Informatikushallgató az RMIT University Vietnam egyetemen, full-stack fejlesztői háttérrel és tervezett kiberbiztonsági szakirányával.'
+      description: 'Molnár Márk portfóliója. Informatikushallgató az RMIT University Vietnam egyetemen, Szoftverfejlesztő és Tesztelő szakképesítéssel, valamint kiberbiztonsági és hálózatvédelmi célokkal.'
     },
     language: { label: 'Nyelvválasztó' },
     nav: { about: 'Rólam', skills: 'Készségek', credentials: 'Képzések', projects: 'Projektek', contact: 'Kapcsolat', toggle: 'Navigáció megnyitása', close: 'Navigáció bezárása' },
@@ -10,25 +10,47 @@ const translations = {
       eyebrow: 'Molnár Márk · Informatikushallgató @ RMIT Vietnam',
       title1: 'Full-stack webes megoldások,',
       title2: 'biztonságtudatos szemlélettel.',
-      description: 'Modern webalkalmazásokat építek <strong>európai szoftverfejlesztői alapokra</strong> támaszkodva. Jelenleg az RMIT University Vietnam hallgatója vagyok, és a jövőben a <strong>kiberbiztonságot választom szakirányként</strong>.',
+      description: 'Modern webalkalmazásokat építek az ötéves magyarországi <strong>Szoftverfejlesztő és Tesztelő képzésem</strong> alapjaira támaszkodva. Felsőfokú tanulmányaimat a jövőben <strong>kiberbiztonság és hálózati védelem</strong> területén folytatom.',
       projects: 'Projektek megtekintése',
       linkedin: 'Kapcsolódás LinkedInen',
       stack: 'Fő technológiák',
       university: 'Egyetem',
-      major: 'Tervezett szakirány',
+      major: 'Kiberbiztonság és hálózatvédelem',
       scroll: 'GÖRGESS'
     },
     profile: {
       subtitle: 'IT hallgató · Full-stack fejlesztő',
-      code: '<span class="code-k">const</span> <span class="code-v">developer</span> = {<br>&nbsp;&nbsp;név: <span class="code-s">\'Molnár Márk\'</span>,<br>&nbsp;&nbsp;szerep: <span class="code-s">\'Junior fejlesztő / IT hallgató\'</span>,<br>&nbsp;&nbsp;egyetem: <span class="code-s">\'RMIT University Vietnam\'</span>,<br>&nbsp;&nbsp;tervezettSzak: <span class="code-s">\'Kiberbiztonság\'</span>,<br>&nbsp;&nbsp;technológiák: [<span class="code-s">\'Python\'</span>, <span class="code-s">\'C#\'</span>, <span class="code-s">\'PHP\'</span>, <span class="code-s">\'JS\'</span>, <span class="code-s">\'SQL\'</span>],<br>&nbsp;&nbsp;státusz: <span class="code-s">\'Nyitott gyakornoki és junior lehetőségekre\'</span><br>};'
+      code: '<span class="code-k">const</span> <span class="code-v">developer</span> = {<br>&nbsp;&nbsp;név: <span class="code-s">\'Molnár Márk\'</span>,<br>&nbsp;&nbsp;szerep: <span class="code-s">\'Junior fejlesztő / IT hallgató\'</span>,<br>&nbsp;&nbsp;egyetem: <span class="code-s">\'RMIT University Vietnam\'</span>,<br>&nbsp;&nbsp;tervezettSzak: <span class="code-s">\'Kiberbiztonság és hálózati védelem\'</span>,<br>&nbsp;&nbsp;technológiák: [<span class="code-s">\'Python\'</span>, <span class="code-s">\'C#\'</span>, <span class="code-s">\'Java\'</span>, <span class="code-s">\'PHP\'</span>, <span class="code-s">\'JS\'</span>, <span class="code-s">\'SQL\'</span>],<br>&nbsp;&nbsp;státusz: <span class="code-s">\'Nyitott gyakornoki és junior lehetőségekre\'</span><br>};'
     },
     about: {
       eyebrow: 'Rólam',
       title: 'Európai fejlesztői alapok, nemzetközi egyetemi környezetben.',
-      p1: 'Az RMIT University Vietnam informatikushallgatója vagyok, magyarországi technikusi végzettséggel a <strong>BMSZC Neumann János Informatikai Technikumból</strong>.',
-      p2: 'Full-stack webalkalmazásokon dolgozom PHP, MySQL, HTML, CSS és JavaScript használatával, emellett Pythonban és C#-ban objektumorientált megoldásokat készítek. A következő egyetemi szakirányomnak a <strong>kiberbiztonságot</strong> választom.',
-      tag1: 'Szoftverfejlesztő és -tesztelő végzettség',
-      tag2: 'Kiberbiztonsági célirány'
+      p1: 'A <strong>Szoftverfejlesztő és Tesztelő szakképesítésemet</strong> Magyarországon, a BMSZC Neumann János Informatikai Technikum ötéves képzésén szereztem 2020 és 2025 között.',
+      p2: 'Jelenleg az RMIT University Vietnam informatikushallgatója vagyok. Full-stack webalkalmazásokon dolgozom, felsőfokú tanulmányaimat pedig a jövőben <strong>kiberbiztonság és hálózati védelem</strong> területén folytatom.',
+      tag1: 'Szoftverfejlesztő és Tesztelő',
+      tag2: 'Kiberbiztonság és hálózatvédelem',
+      languagesLabel: 'Beszélt nyelvek',
+      hungarian: 'Magyar',
+      hungarianLevel: 'Anyanyelvi szint',
+      english: 'Angol',
+      englishLevel: 'Szakmai munkanyelv'
+    },
+    experience: {
+      eyebrow: 'Gyakorlati iskolai tapasztalat',
+      title: 'Programozási projektek és technikai támogatás.',
+      subtitle: 'Különböző iskolai környezetekben szereztem tapasztalatot csoportos fejlesztésben, rendezvénytechnikában és informatikai támogatásban.',
+      neumann: {
+        intro: 'Az ötéves képzés minden tanévében általában öt programozási projektet készítettünk csoportosan.',
+        projects: { title: 'Évi körülbelül öt projekt', text: 'A rendszeres projektfeladatok elsősorban programozási problémák közös megoldására épültek.' },
+        teamwork: { title: 'Csoportos fejlesztés', text: 'A feladatokat csapatban terveztük, osztottuk fel és valósítottuk meg.' }
+      },
+      primary: {
+        date: 'Általános iskolai időszak',
+        title: 'Rendezvénytechnika és IT support',
+        intro: 'Az iskolai technikai csapat tagjaként rendezvények megvalósításában és a tanári kar informatikai támogatásában vettem részt.',
+        events: { title: 'Rendezvénytechnika és média', text: 'Csapatban feleltünk az iskolai rendezvények hangosításáért, technikai lebonyolításáért és videós anyagaiért.' },
+        support: { title: 'Technikai és IT support', text: 'Hardveres, szoftveres és hálózati problémák esetén a tanári kar elsőként a csapatunkhoz fordult segítségért.' }
+      }
     },
     skills: {
       eyebrow: 'Technikai készségek',
@@ -36,22 +58,24 @@ const translations = {
       subtitle: 'Technológiák és alkalmazások, amelyeket fejlesztéshez, tanuláshoz és digitális tartalomkészítéshez használok.',
       programming: { title: 'Programozás és web', text: 'Szoftverfejlesztés és reszponzív webes megoldások.' },
       data: { title: 'Adatbázisok és fejlesztői eszközök', text: 'Adatkezelés, verziókövetés és fejlesztői munkafolyamatok.' },
-      office: { title: 'Microsoft Office', text: 'Dokumentumok, táblázatok és prezentációk magabiztos kezelése.' },
+      office: { title: 'Microsoft Office', text: 'Dokumentumok, táblázatok, prezentációk, adatbázisok és digitális jegyzetek kezelése.' },
       adobe: { title: 'Adobe Creative', text: 'Kép-, videó-, animáció- és webes tartalmak készítése.' }
     },
     credentials: {
       eyebrow: 'Tanúsítványok és képzések',
-      title: 'Mit takar az ECDL és a Full-stack fejlesztői háttér?',
-      subtitle: 'A megnevezések mögötti gyakorlati tudás röviden és érthetően.',
+      title: 'Mit takar az ECDL IT Security és az ötéves szakképzés?',
+      subtitle: 'A tanúsítvány és a szakképesítés mögötti gyakorlati tudás röviden és érthetően.',
       ecdl: {
-        label: 'Digitális kompetencia',
-        text: 'Az ECDL a mindennapi, biztonságos és hatékony számítógép-használatot igazolja. Ide tartozik az operációs rendszerek és online eszközök kezelése, a szövegszerkesztés, táblázatkezelés, prezentációkészítés, valamint az informatikai biztonság alapjainak ismerete.',
-        topic1: 'Digitális alapismeretek',
-        topic2: 'IT-biztonság'
+        label: 'Tanúsítvány · 2023',
+        text: 'Az ECDL IT Security tanúsítvány az informatikai biztonság alapjainak ismeretét igazolja: a digitális fenyegetések és kártevők felismerését, a hálózatok biztonságos használatát, valamint az adatok, fiókok és eszközök megfelelő védelmét.',
+        topic1: 'Digitális fenyegetések',
+        topic2: 'Hálózati biztonság',
+        topic3: 'Adat- és fiókvédelem'
       },
       fullstack: {
-        label: 'Szoftverfejlesztő és -tesztelő végzettség · 2025',
-        text: 'A Full-stack fejlesztés egy webalkalmazás teljes technikai folyamatát fogja át: a felhasználói felület elkészítését, a szerveroldali üzleti logikát, az adatbázis megtervezését és kezelését, valamint a komponensek összekapcsolását, tesztelését és telepítését.',
+        label: 'Ötéves képzés · 2020–2025',
+        title: 'Szoftverfejlesztő és Tesztelő',
+        text: 'A BMSZC Neumann János Informatikai Technikumban szerzett szakképesítés az objektumorientált programozástól és full-stack webfejlesztéstől az adatbázis-kezelésen át a szoftvertesztelésig fogta át a fejlesztési folyamatot.',
         topic: 'Adatbázisok',
         topic2: 'Tesztelés'
       }
@@ -68,15 +92,15 @@ const translations = {
     footer: { rights: 'Minden jog fenntartva.' },
     terminal: [
       { cmd: 'whoami', out: 'Molnár Márk — informatikushallgató @ RMIT Vietnam' },
-      { cmd: 'cat focus.txt', out: 'Tervezett egyetemi szakirány: Kiberbiztonság' },
-      { cmd: 'cat qualifications.txt', out: 'Szoftverfejlesztői végzettség (2025), ECDL' },
+      { cmd: 'cat focus.txt', out: 'Jövőbeli irány: Kiberbiztonság és hálózati védelem' },
+      { cmd: 'cat qualifications.txt', out: 'Szoftverfejlesztő és Tesztelő (2025), ECDL IT Security' },
       { cmd: 'status', out: 'Nyitott gyakornoki és junior fejlesztői lehetőségekre' }
     ]
   },
   en: {
     meta: {
       title: 'Mark Molnar – Portfolio',
-      description: 'Portfolio of Mark Molnar, an IT student at RMIT University Vietnam with a full-stack development background and Cybersecurity as his planned major.'
+      description: 'Portfolio of Mark Molnar, an IT student at RMIT University Vietnam with a Software Developer and Tester qualification and future studies focused on Cybersecurity and Network Defense.'
     },
     language: { label: 'Language selector' },
     nav: { about: 'About', skills: 'Skills', credentials: 'Qualifications', projects: 'Projects', contact: 'Contact', toggle: 'Open navigation', close: 'Close navigation' },
@@ -84,25 +108,47 @@ const translations = {
       eyebrow: 'Mark Molnar · IT Student @ RMIT Vietnam',
       title1: 'Full-stack web solutions,',
       title2: 'built with security in mind.',
-      description: 'I build modern web applications on a <strong>European software development foundation</strong>. I am currently studying at RMIT University Vietnam and plan to <strong>choose Cybersecurity as my major</strong>.',
+      description: 'I build modern web applications on the foundation of my five-year Hungarian <strong>Software Developer and Tester programme</strong>. I plan to continue my higher education in <strong>Cybersecurity and Network Defense</strong>.',
       projects: 'View projects',
       linkedin: 'Connect on LinkedIn',
       stack: 'Primary stack',
       university: 'University',
-      major: 'Planned major',
+      major: 'Cybersecurity & Network Defense',
       scroll: 'SCROLL'
     },
     profile: {
       subtitle: 'IT student · Full-stack developer',
-      code: '<span class="code-k">const</span> <span class="code-v">developer</span> = {<br>&nbsp;&nbsp;name: <span class="code-s">\'Mark Molnar\'</span>,<br>&nbsp;&nbsp;role: <span class="code-s">\'Junior Developer / IT Student\'</span>,<br>&nbsp;&nbsp;university: <span class="code-s">\'RMIT University Vietnam\'</span>,<br>&nbsp;&nbsp;plannedMajor: <span class="code-s">\'Cybersecurity\'</span>,<br>&nbsp;&nbsp;stack: [<span class="code-s">\'Python\'</span>, <span class="code-s">\'C#\'</span>, <span class="code-s">\'PHP\'</span>, <span class="code-s">\'JS\'</span>, <span class="code-s">\'SQL\'</span>],<br>&nbsp;&nbsp;status: <span class="code-s">\'Open to internship and junior roles\'</span><br>};'
+      code: '<span class="code-k">const</span> <span class="code-v">developer</span> = {<br>&nbsp;&nbsp;name: <span class="code-s">\'Mark Molnar\'</span>,<br>&nbsp;&nbsp;role: <span class="code-s">\'Junior Developer / IT Student\'</span>,<br>&nbsp;&nbsp;university: <span class="code-s">\'RMIT University Vietnam\'</span>,<br>&nbsp;&nbsp;plannedMajor: <span class="code-s">\'Cybersecurity & Network Defense\'</span>,<br>&nbsp;&nbsp;stack: [<span class="code-s">\'Python\'</span>, <span class="code-s">\'C#\'</span>, <span class="code-s">\'Java\'</span>, <span class="code-s">\'PHP\'</span>, <span class="code-s">\'JS\'</span>, <span class="code-s">\'SQL\'</span>],<br>&nbsp;&nbsp;status: <span class="code-s">\'Open to internship and junior roles\'</span><br>};'
     },
     about: {
       eyebrow: 'About me',
       title: 'European development foundations in an international university environment.',
-      p1: 'I am an IT undergraduate at <strong>RMIT University Vietnam</strong> with a technical qualification from BMSZC Neumann János Informatikai Technikum in Hungary.',
-      p2: 'I work on full-stack web applications with PHP, MySQL, HTML, CSS and JavaScript, and build object-oriented solutions in Python and C#. I plan to choose <strong>Cybersecurity</strong> as my university major.',
-      tag1: 'Software Developer and Tester qualification',
-      tag2: 'Cybersecurity direction'
+      p1: 'I earned my <strong>Software Developer and Tester qualification</strong> in Hungary through the five-year programme at BMSZC Neumann János Informatikai Technikum between 2020 and 2025.',
+      p2: 'I am currently an IT undergraduate at RMIT University Vietnam and work on full-stack web applications. I plan to continue my higher education in <strong>Cybersecurity and Network Defense</strong>.',
+      tag1: 'Software Developer and Tester',
+      tag2: 'Cybersecurity & Network Defense',
+      languagesLabel: 'Languages',
+      hungarian: 'Hungarian',
+      hungarianLevel: 'Native or bilingual',
+      english: 'English',
+      englishLevel: 'Professional working proficiency'
+    },
+    experience: {
+      eyebrow: 'Practical school experience',
+      title: 'Programming projects and technical support.',
+      subtitle: 'I gained experience in collaborative development, event technology, and IT support across different school environments.',
+      neumann: {
+        intro: 'During each year of the five-year programme, we usually completed five programming projects in groups.',
+        projects: { title: 'Around five projects per year', text: 'The recurring assignments primarily focused on solving programming problems collaboratively.' },
+        teamwork: { title: 'Collaborative development', text: 'We planned, divided, and implemented the assignments as a team.' }
+      },
+      primary: {
+        date: 'Elementary school years',
+        title: 'Event technology and IT support',
+        intro: 'As part of the school’s technical team, I supported event delivery and provided IT assistance to the teaching staff.',
+        events: { title: 'Event technology & media', text: 'As a team, we handled sound reinforcement, technical delivery, and video production for school events.' },
+        support: { title: 'Technical & IT support', text: 'The teaching staff came to our team first with hardware, software, and network-related problems.' }
+      }
     },
     skills: {
       eyebrow: 'Technical skills',
@@ -110,22 +156,24 @@ const translations = {
       subtitle: 'Technologies and applications I use for development, learning and digital content creation.',
       programming: { title: 'Programming & web', text: 'Software development and responsive web solutions.' },
       data: { title: 'Databases & developer tools', text: 'Data management, version control and development workflows.' },
-      office: { title: 'Microsoft Office', text: 'Confident use of documents, spreadsheets and presentations.' },
+      office: { title: 'Microsoft Office', text: 'Confident use of documents, spreadsheets, presentations, databases, and digital notes.' },
       adobe: { title: 'Adobe Creative', text: 'Creating image, video, motion and web content.' }
     },
     credentials: {
       eyebrow: 'Certificates & qualifications',
-      title: 'What do ECDL and Full-stack development cover?',
-      subtitle: 'A clear overview of the practical knowledge behind these qualifications.',
+      title: 'What do ECDL IT Security and the five-year programme cover?',
+      subtitle: 'A clear overview of the practical knowledge behind the certificate and qualification.',
       ecdl: {
-        label: 'Digital competence',
-        text: 'ECDL certifies safe and effective everyday computer use. It covers operating systems and online tools, word processing, spreadsheets, presentations, and the fundamentals of IT security.',
-        topic1: 'Digital essentials',
-        topic2: 'IT security'
+        label: 'Certificate · 2023',
+        text: 'The ECDL IT Security certificate demonstrates knowledge of information security fundamentals: recognising digital threats and malware, using networks safely, and protecting data, accounts, and devices.',
+        topic1: 'Digital threats',
+        topic2: 'Network security',
+        topic3: 'Data & account protection'
       },
       fullstack: {
-        label: 'Software Developer and Tester qualification · 2025',
-        text: 'Full-stack development covers the complete technical lifecycle of a web application: building the user interface, implementing server-side business logic, designing and managing the database, connecting the components, testing, and deployment.',
+        label: 'Five-year programme · 2020–2025',
+        title: 'Software Developer and Tester',
+        text: 'The qualification earned at BMSZC Neumann János Informatikai Technikum covered the development lifecycle from object-oriented programming and full-stack web development to database management and software testing.',
         topic: 'Databases',
         topic2: 'Testing'
       }
@@ -142,8 +190,8 @@ const translations = {
     footer: { rights: 'All rights reserved.' },
     terminal: [
       { cmd: 'whoami', out: 'Mark Molnar — IT Student @ RMIT Vietnam' },
-      { cmd: 'cat focus.txt', out: 'Planned university major: Cybersecurity' },
-      { cmd: 'cat qualifications.txt', out: 'Software Development Qualification (2025), ECDL' },
+      { cmd: 'cat focus.txt', out: 'Future direction: Cybersecurity and Network Defense' },
+      { cmd: 'cat qualifications.txt', out: 'Software Developer and Tester (2025), ECDL IT Security' },
       { cmd: 'status', out: 'Open to internship and junior developer opportunities' }
     ]
   }
@@ -316,6 +364,8 @@ if (!prefersReducedMotion) {
 
   gsap.from('.about-text p', { scrollTrigger: { trigger: '.about-text', start: 'top 80%' }, opacity: 0, y: 24, duration: 0.8, stagger: 0.15, ease: 'power3.out' });
   gsap.from('.terminal', { scrollTrigger: { trigger: '.terminal', start: 'top 82%' }, opacity: 0, x: 30, duration: 0.9, ease: 'power3.out' });
+  gsap.from('.experience-panel', { scrollTrigger: { trigger: '.experience-panel', start: 'top 82%' }, opacity: 0, y: 36, duration: 0.9, ease: 'power3.out' });
+  gsap.from('.experience-item', { scrollTrigger: { trigger: '.experience-grid', start: 'top 84%' }, opacity: 0, y: 24, duration: 0.7, stagger: 0.12, ease: 'power3.out' });
   gsap.from('.skill-card', { scrollTrigger: { trigger: '.skills-grid', start: 'top 80%' }, opacity: 0, y: 40, duration: 0.8, stagger: 0.12, ease: 'power3.out' });
   gsap.from('.credential-card', { scrollTrigger: { trigger: '.credentials-grid', start: 'top 80%' }, opacity: 0, y: 40, duration: 0.8, stagger: 0.14, ease: 'power3.out' });
 
