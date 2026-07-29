@@ -1,22 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mark Molnar - Portfolio</title>
-<meta name="description" content="Portfolio of Mark Molnar. IT Student at RMIT University Vietnam & Full-Stack Developer with a certified European engineering background. Python, C#, PHP, JS, SQL, Cybersecurity.">
-
-<!-- ===== Fonts ===== -->
+<title>Molnár Márk – Portfólió</title>
+<meta name="description" content="Molnár Márk portfóliója. Informatikushallgató az RMIT University Vietnam egyetemen, full-stack fejlesztői háttérrel és tervezett kiberbiztonsági szakirányával.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-
-<!-- ===== FontAwesome 6 ===== -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-<!-- ===== Three.js r128 ===== -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<!-- ===== GSAP + ScrollTrigger ===== -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <link rel="stylesheet" href="css/style.css">
@@ -30,229 +23,253 @@
   <div class="wrap nav-inner">
     <a href="#top" class="logo"><span class="bracket">&lt;</span>mark_molnar<span class="bracket">/&gt;</span><span class="cursor"></span></a>
     <nav class="nav-links" id="navLinks">
-      <a href="#about" data-nav>About</a>
-      <a href="#skills" data-nav>Skills</a>
-      <a href="#projects" data-nav>Projects</a>
-      <a href="#contact" data-nav>Contact</a>
+      <a href="#about" data-nav data-i18n="nav.about">Rólam</a>
+      <a href="#skills" data-nav data-i18n="nav.skills">Készségek</a>
+      <a href="#credentials" data-nav data-i18n="nav.credentials">Képzések</a>
+      <a href="#projects" data-nav data-i18n="nav.projects">Projektek</a>
+      <a href="#contact" data-nav data-i18n="nav.contact">Kapcsolat</a>
       <a href="https://www.linkedin.com/in/molmardo/" target="_blank" rel="noopener" class="nav-cta nav-cta-mobile">
         <i class="fa-brands fa-linkedin-in"></i> LinkedIn
       </a>
     </nav>
-    <a href="https://www.linkedin.com/in/molmardo/" target="_blank" rel="noopener" class="nav-cta" id="navCtaDesktop">
-      <i class="fa-brands fa-linkedin-in"></i> LinkedIn
-    </a>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-      <i class="fa-solid fa-bars"></i>
-    </button>
+    <div class="nav-actions">
+      <div class="language-switch" role="group" data-i18n-aria-label="language.label" aria-label="Nyelvválasztó">
+        <button type="button" class="language-button active" data-language="hu" aria-pressed="true">HU</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" class="language-button" data-language="en" aria-pressed="false">EN</button>
+      </div>
+      <a href="https://www.linkedin.com/in/molmardo/" target="_blank" rel="noopener" class="nav-cta" id="navCtaDesktop">
+        <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+      </a>
+      <button class="nav-toggle" id="navToggle" data-i18n-aria-label="nav.toggle" aria-label="Navigáció megnyitása" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
   </div>
 </header>
-<section class="hero" id="top">
-  <div class="wrap hero-grid">
-        <div class="hero-left">
-      <p class="eyebrow">Mark Molnar · IT Student @ RMIT Vietnam</p>
-      <h1 class="hero-title">
-        <span class="line"><span>Full-stack web solutions,</span></span>
-        <span class="line"><span class="accent">engineered with security in mind.</span></span>
-      </h1>
-      <p class="hero-desc">
-        I build production-ready web applications with a certified <strong>European software engineering background</strong>. 
-        Currently pursuing my major in <strong>Software Engineering & Cybersecurity</strong> at RMIT University Vietnam.
-      </p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-diagram-project"></i> View Projects</a>
-        <a href="https://www.linkedin.com/in/molmardo/" target="_blank" rel="noopener" class="btn btn-ghost"><i class="fa-brands fa-linkedin-in"></i> Connect on LinkedIn</a>
-      </div>
-      <div class="hero-meta">
-        <div class="hero-meta-item"><span class="num">Python / C# / PHP</span><span class="label">Primary Stack</span></div>
-        <div class="hero-meta-item"><span class="num">RMIT VN</span><span class="label">University</span></div>
-        <div class="hero-meta-item"><span class="num">HU → VN</span><span class="label">European Foundation</span></div>
-      </div>
-    </div>
 
-    <div class="hero-right">
-      <div class="profile-3d-card glass tilt-card">
-        <div class="profile-card-inner">
-          <div class="profile-avatar-row">
-            <div class="avatar-box">
-              <i class="fa-solid fa-user-gear"></i>
+<main>
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="hero-left">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Molnár Márk · Informatikushallgató @ RMIT Vietnam</p>
+        <h1 class="hero-title">
+          <span class="line"><span data-i18n="hero.title1">Full-stack webes megoldások,</span></span>
+          <span class="line"><span class="accent" data-i18n="hero.title2">biztonságtudatos szemlélettel.</span></span>
+        </h1>
+        <p class="hero-desc" data-i18n-html="hero.description">Modern webalkalmazásokat építek <strong>európai szoftverfejlesztői alapokra</strong> támaszkodva. Jelenleg az RMIT University Vietnam hallgatója vagyok, és a jövőben a <strong>kiberbiztonságot választom szakirányként</strong>.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-diagram-project"></i> <span data-i18n="hero.projects">Projektek megtekintése</span></a>
+          <a href="https://www.linkedin.com/in/molmardo/" target="_blank" rel="noopener" class="btn btn-ghost"><i class="fa-brands fa-linkedin-in"></i> <span data-i18n="hero.linkedin">Kapcsolódás LinkedInen</span></a>
+        </div>
+        <div class="hero-meta">
+          <div class="hero-meta-item"><span class="num">Python / C# / PHP</span><span class="label" data-i18n="hero.stack">Fő technológiák</span></div>
+          <div class="hero-meta-item"><span class="num">RMIT VN</span><span class="label" data-i18n="hero.university">Egyetem</span></div>
+          <div class="hero-meta-item"><span class="num">Cybersecurity</span><span class="label" data-i18n="hero.major">Tervezett szakirány</span></div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="profile-3d-card glass tilt-card">
+          <div class="profile-card-inner">
+            <div class="profile-avatar-row">
+              <div class="avatar-box"><i class="fa-solid fa-user-shield"></i></div>
+              <div class="profile-name-tag">
+                <h3>Molnár Márk</h3>
+                <p data-i18n="profile.subtitle">IT hallgató · Full-stack fejlesztő</p>
+              </div>
             </div>
-            <div class="profile-name-tag">
-              <h3>Mark Molnar</h3>
-              <p>molnarmark2005@gmail.com</p>
+            <div class="code-box" data-i18n-html="profile.code">
+              <span class="code-k">const</span> <span class="code-v">developer</span> = {<br>
+              &nbsp;&nbsp;név: <span class="code-s">'Molnár Márk'</span>,<br>
+              &nbsp;&nbsp;szerep: <span class="code-s">'Junior fejlesztő / IT hallgató'</span>,<br>
+              &nbsp;&nbsp;egyetem: <span class="code-s">'RMIT University Vietnam'</span>,<br>
+              &nbsp;&nbsp;tervezettSzak: <span class="code-s">'Kiberbiztonság'</span>,<br>
+              &nbsp;&nbsp;technológiák: [<span class="code-s">'Python'</span>, <span class="code-s">'C#'</span>, <span class="code-s">'PHP'</span>, <span class="code-s">'JS'</span>, <span class="code-s">'SQL'</span>],<br>
+              &nbsp;&nbsp;státusz: <span class="code-s">'Nyitott gyakornoki és junior lehetőségekre'</span><br>
+              };
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-cue"><span data-i18n="hero.scroll">GÖRGESS</span><span class="stem"></span></div>
+  </section>
 
-          <div class="code-box">
-            <span class="code-k">const</span> <span class="code-v">developer</span> = {<br>
-            &nbsp;&nbsp;name: <span class="code-s">'Mark Molnar'</span>,<br>
-            &nbsp;&nbsp;role: <span class="code-s">'Junior Developer / IT Student'</span>,<br>
-            &nbsp;&nbsp;education: <span class="code-s">'RMIT Vietnam (Software & Security)'</span>,<br>
-            &nbsp;&nbsp;origin: <span class="code-s">'Hungary (BMSZC Neumann)'</span>,<br>
-            &nbsp;&nbsp;languages: [<span class="code-s">'Python'</span>, <span class="code-s">'C#'</span>, <span class="code-s">'PHP'</span>, <span class="code-s">'JS'</span>, <span class="code-s">'SQL'</span>],<br>
-            &nbsp;&nbsp;status: <span class="code-s">'Open for Intern / Junior Roles 🚀'</span><br>
-            };
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="about-grid">
+        <div>
+          <p class="eyebrow" data-i18n="about.eyebrow">Rólam</p>
+          <h2 class="section-title" data-i18n="about.title">Európai fejlesztői alapok, nemzetközi egyetemi környezetben.</h2>
+          <div class="about-text">
+            <p data-i18n-html="about.p1">Az RMIT University Vietnam informatikushallgatója vagyok, magyarországi technikusi végzettséggel a <strong>BMSZC Neumann János Informatikai Technikumból</strong>.</p>
+            <p data-i18n-html="about.p2">Full-stack webalkalmazásokon dolgozom PHP, MySQL, HTML, CSS és JavaScript használatával, emellett Pythonban és C#-ban objektumorientált megoldásokat készítek. A következő egyetemi szakirányomnak a <strong>kiberbiztonságot</strong> választom.</p>
+          </div>
+          <div class="about-tags">
+            <span>RMIT Vietnam</span>
+            <span data-i18n="about.tag1">Szoftverfejlesztői végzettség</span>
+            <span>Full-stack Web</span>
+            <span data-i18n="about.tag2">Kiberbiztonsági célirány</span>
+          </div>
+        </div>
+
+        <div class="terminal glass" data-tilt-ignore>
+          <div class="terminal-bar">
+            <span class="terminal-dot"></span><span class="terminal-dot"></span><span class="terminal-dot"></span>
+            <span class="terminal-title">mark_molnar — zsh</span>
+          </div>
+          <div class="terminal-body" id="terminalBody"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="skills.eyebrow">Technikai készségek</p>
+        <h2 class="section-title" data-i18n="skills.title">Fejlesztés, adatkezelés és kreatív eszközök.</h2>
+        <p class="section-sub" data-i18n="skills.subtitle">Technológiák és alkalmazások, amelyeket fejlesztéshez, tanuláshoz és digitális tartalomkészítéshez használok.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card glass tilt-card">
+          <div class="icon"><i class="fa-solid fa-code"></i></div>
+          <h3 data-i18n="skills.programming.title">Programozás és web</h3>
+          <p data-i18n="skills.programming.text">Szoftverfejlesztés és reszponzív webes megoldások.</p>
+          <div class="skill-tags">
+            <span><i class="fa-brands fa-python"></i> Python</span><span><i class="fa-solid fa-hashtag"></i> C#</span><span><i class="fa-brands fa-php"></i> PHP</span><span><i class="fa-brands fa-square-js"></i> JavaScript</span><span><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass tilt-card">
+          <div class="icon"><i class="fa-solid fa-database"></i></div>
+          <h3 data-i18n="skills.data.title">Adatbázisok és fejlesztői eszközök</h3>
+          <p data-i18n="skills.data.text">Adatkezelés, verziókövetés és fejlesztői munkafolyamatok.</p>
+          <div class="skill-tags">
+            <span><i class="fa-solid fa-database"></i> MySQL</span><span><i class="fa-solid fa-server"></i> phpMyAdmin</span><span><i class="fa-brands fa-github"></i> Git & GitHub</span><span><i class="fa-solid fa-code"></i> VS Code</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass tilt-card">
+          <div class="icon"><i class="fa-solid fa-file-lines"></i></div>
+          <h3 data-i18n="skills.office.title">Microsoft Office</h3>
+          <p data-i18n="skills.office.text">Dokumentumok, táblázatok és prezentációk magabiztos kezelése.</p>
+          <div class="skill-tags">
+            <span><i class="fa-solid fa-file-word"></i> Word</span><span><i class="fa-solid fa-file-excel"></i> Excel</span><span><i class="fa-solid fa-file-powerpoint"></i> PowerPoint</span><span><i class="fa-solid fa-envelope-open-text"></i> Outlook</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass tilt-card">
+          <div class="icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <h3 data-i18n="skills.adobe.title">Adobe Creative</h3>
+          <p data-i18n="skills.adobe.text">Kép-, videó-, animáció- és webes tartalmak készítése.</p>
+          <div class="skill-tags">
+            <span>Photoshop</span><span>After Effects</span><span>Premiere Pro</span><span>Dreamweaver</span>
           </div>
         </div>
       </div>
     </div>
+  </section>
 
-  </div>
-  <div class="scroll-cue"><span>SCROLL</span><span class="stem"></span></div>
-</section>
-
-<section class="section" id="about">
-  <div class="wrap">
-    <div class="about-grid">
-      <div>
-        <p class="eyebrow">About Me</p>
-        <h2 class="section-title">Certified European engineering foundation, applied in Vietnam.</h2>
-        <div class="about-text" style="margin-top:26px;">
-          <p>My name is <strong>Mark Molnar</strong>. I am an IT undergraduate at <strong>RMIT University Vietnam</strong> with a certified technical diploma from Hungary (BMSZC Neumann János Informatikai Technikum).</p>
-          <p>I specialize in building full-stack web applications (PHP, MySQL, HTML/CSS, JS) and object-oriented backend solutions in Python and C#. I also bring a strong curiosity and practical approach to <strong>Cybersecurity and Network Defense</strong>.</p>
-        </div>
-        <div class="about-tags">
-          <span>RMIT Vietnam</span>
-          <span>Certified Software Developer</span>
-          <span>Full-Stack Web</span>
-          <span>Network & Security Basics</span>
-        </div>
+  <section class="section" id="credentials">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="credentials.eyebrow">Tanúsítványok és képzések</p>
+        <h2 class="section-title" data-i18n="credentials.title">Mit takar az ECDL és a Full-stack fejlesztői háttér?</h2>
+        <p class="section-sub" data-i18n="credentials.subtitle">A megnevezések mögötti gyakorlati tudás röviden és érthetően.</p>
       </div>
 
-      <div class="terminal glass" data-tilt-ignore>
-        <div class="terminal-bar">
-          <span class="terminal-dot"></span><span class="terminal-dot"></span><span class="terminal-dot"></span>
-          <span class="terminal-title">mark_molnar — zsh</span>
-        </div>
-        <div class="terminal-body" id="terminalBody">
-
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ Skills ============ -->
-<section class="section" id="skills">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">Technical Skills</p>
-      <h2 class="section-title">Languages, databases, and security fundamentals.</h2>
-      <p class="section-sub">Tools and platforms I use to design, build, and test applications.</p>
-    </div>
-
-    <div class="skills-grid">
-      <div class="skill-card glass tilt-card">
-        <div class="icon"><i class="fa-solid fa-code"></i></div>
-        <h3>Programming & Web</h3>
-        <p>Core software development and responsive web engineering.</p>
-        <div class="skill-tags">
-          <span><i class="fa-brands fa-python"></i> Python</span>
-          <span><i class="fa-solid fa-hashtag"></i> C#</span>
-          <span><i class="fa-brands fa-php"></i> PHP</span>
-          <span><i class="fa-brands fa-square-js"></i> JavaScript</span>
-          <span><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
-        </div>
-      </div>
-
-      <div class="skill-card glass tilt-card">
-        <div class="icon"><i class="fa-solid fa-database"></i></div>
-        <h3>Databases & Tools</h3>
-        <p>Data administration, version control, and IDE workflow.</p>
-        <div class="skill-tags">
-          <span><i class="fa-solid fa-database"></i> MySQL</span>
-          <span><i class="fa-solid fa-server"></i> phpMyAdmin</span>
-          <span><i class="fa-brands fa-github"></i> Git & GitHub</span>
-          <span><i class="fa-solid fa-code"></i> VS Code</span>
-        </div>
-      </div>
-
-      <div class="skill-card glass tilt-card">
-        <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
-        <h3>Security & Certificates</h3>
-        <p>Certified IT proficiency and network defense concepts.</p>
-        <div class="skill-tags">
-          <span><i class="fa-solid fa-certificate"></i> Software Dev Cert (2025)</span>
-          <span><i class="fa-solid fa-award"></i> ECDL / IT Security</span>
-          <span><i class="fa-solid fa-network-wired"></i> Network Fundamentals</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="projects">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">Featured Work</p>
-      <h2 class="section-title">Freelance & Academic Projects</h2>
-      <p class="section-sub">Real-world commercial builds and web systems developed and deployed by Mark Molnar.</p>
-    </div>
-
-    <div class="projects-list">
-
-      <article class="project-card glass tilt-card">
-        <div class="project-visual"><i class="fa-solid fa-globe"></i></div>
-        <div class="project-body">
-          <span class="project-tag">Freelance Commercial Web Platform</span>
-          <h3>rdr2003.hu</h3>
-          <p>A responsive, production-deployed commercial platform built using HTML, CSS, PHP, and MySQL. Features multi-language options, transactional mail handling, and structured database management.</p>
-          <div class="project-stack">
-            <span>PHP</span><span>MySQL</span><span>HTML/CSS</span><span>SEO</span>
+      <div class="credentials-grid">
+        <article class="credential-card glass tilt-card">
+          <div class="credential-number">01</div>
+          <div>
+            <div class="credential-heading">
+              <div class="icon"><i class="fa-solid fa-certificate"></i></div>
+              <div><span data-i18n="credentials.ecdl.label">Digitális kompetencia</span><h3>ECDL / ICDL</h3></div>
+            </div>
+            <p data-i18n="credentials.ecdl.text">Az ECDL a mindennapi, biztonságos és hatékony számítógép-használatot igazolja. Ide tartozik az operációs rendszerek és online eszközök kezelése, a szövegszerkesztés, táblázatkezelés, prezentációkészítés, valamint az informatikai biztonság alapjainak ismerete.</p>
+            <div class="credential-topics"><span data-i18n="credentials.ecdl.topic1">Digitális alapismeretek</span><span>MS Office</span><span data-i18n="credentials.ecdl.topic2">IT-biztonság</span></div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <article class="project-card glass tilt-card">
-        <div class="project-visual"><i class="fa-solid fa-shop"></i></div>
-        <div class="project-body">
-          <span class="project-tag">Freelance Business Web Application</span>
-          <h3>saigonandmore.hu</h3>
-          <p>A full-stack business web platform designed and deployed for commercial operations, focusing on backend PHP logic, clean UI layout, and database synchronization.</p>
-          <div class="project-stack">
-            <span>PHP</span><span>MySQL</span><span>Bootstrap</span><span>UI Design</span>
+        <article class="credential-card glass tilt-card">
+          <div class="credential-number">02</div>
+          <div>
+            <div class="credential-heading">
+              <div class="icon"><i class="fa-solid fa-layer-group"></i></div>
+              <div><span data-i18n="credentials.fullstack.label">Szoftverfejlesztői végzettség · 2025</span><h3>Full-stack Development</h3></div>
+            </div>
+            <p data-i18n="credentials.fullstack.text">A Full-stack fejlesztés egy webalkalmazás teljes technikai folyamatát fogja át: a felhasználói felület elkészítését, a szerveroldali üzleti logikát, az adatbázis megtervezését és kezelését, valamint a komponensek összekapcsolását, tesztelését és telepítését.</p>
+            <div class="credential-topics"><span>Frontend</span><span>Backend</span><span data-i18n="credentials.fullstack.topic2">Tesztelés</span><span data-i18n="credentials.fullstack.topic">Adatbázisok</span></div>
           </div>
-        </div>
-      </article>
-
-      <article class="project-card glass tilt-card">
-        <div class="project-visual"><i class="fa-solid fa-utensils"></i></div>
-        <div class="project-body">
-          <span class="project-tag">Relational Web Application</span>
-          <h3>Family Meal Planner</h3>
-          <p>A custom relational database application that generates non-repeating weekly meal plans for households, utilizing SQL algorithms to map meals, ingredients, and history.</p>
-          <div class="project-stack">
-            <span>SQL</span><span>PHP</span><span>Relational Modeling</span>
-          </div>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
-<section class="section" id="contact">
-  <div class="wrap">
-    <div class="contact-panel glass">
-      <p class="eyebrow" style="justify-content:center;">Get In Touch</p>
-      <h2 class="section-title">Let's work together.</h2>
-      <p class="section-sub">Open for Internship and Junior Developer opportunities in Ho Chi Minh City or Remote. Reach out directly via email or LinkedIn.</p>
-      <div class="contact-actions">
-        <a href="mailto:molnarmark2005@gmail.com" class="btn btn-primary">
-          <i class="fa-solid fa-envelope"></i> Send Email
-        </a>
-        <a href="https://www.linkedin.com/in/molmardo/" target="_blank" rel="noopener" class="btn btn-ghost">
-          <i class="fa-brands fa-linkedin-in"></i> LinkedIn Profile
-        </a>
+        </article>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="projects.eyebrow">Kiemelt munkák</p>
+        <h2 class="section-title" data-i18n="projects.title">Szabadúszó és tanulmányi projektek</h2>
+        <p class="section-sub" data-i18n="projects.subtitle">Valós üzleti weboldalak és saját fejlesztésű webes rendszerek.</p>
+      </div>
+
+      <div class="projects-list">
+        <article class="project-card glass tilt-card">
+          <div class="project-visual"><i class="fa-solid fa-globe"></i></div>
+          <div class="project-body">
+            <span class="project-tag" data-i18n="projects.rdr.tag">Szabadúszó üzleti webplatform</span>
+            <h3>rdr2003.hu</h3>
+            <p data-i18n="projects.rdr.text">Reszponzív, éles környezetben működő üzleti webplatform HTML, CSS, PHP és MySQL alapokon. Többnyelvű felületet, tranzakciós levélküldést és strukturált adatbázis-kezelést tartalmaz.</p>
+            <div class="project-stack"><span>PHP</span><span>MySQL</span><span>HTML/CSS</span><span>SEO</span></div>
+          </div>
+        </article>
+
+        <article class="project-card glass tilt-card">
+          <div class="project-visual"><i class="fa-solid fa-shop"></i></div>
+          <div class="project-body">
+            <span class="project-tag" data-i18n="projects.saigon.tag">Szabadúszó üzleti webalkalmazás</span>
+            <h3>saigonandmore.hu</h3>
+            <p data-i18n="projects.saigon.text">Kereskedelmi működésre tervezett és telepített full-stack webplatform, szerveroldali PHP logikával, letisztult felülettel és adatbázis-szinkronizációval.</p>
+            <div class="project-stack"><span>PHP</span><span>MySQL</span><span>Bootstrap</span><span>UI Design</span></div>
+          </div>
+        </article>
+
+        <article class="project-card glass tilt-card">
+          <div class="project-visual"><i class="fa-solid fa-utensils"></i></div>
+          <div class="project-body">
+            <span class="project-tag" data-i18n="projects.meal.tag">Relációs webalkalmazás</span>
+            <h3 data-i18n="projects.meal.title">Családi étkezéstervező</h3>
+            <p data-i18n="projects.meal.text">Egyedi relációs adatbázis-alkalmazás, amely ismétlésmentes heti étkezési terveket készít háztartások számára, és SQL-algoritmusokkal kapcsolja össze az ételeket, alapanyagokat és az előzményeket.</p>
+            <div class="project-stack"><span>SQL</span><span>PHP</span><span data-i18n="projects.meal.stack">Relációs modellezés</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="wrap">
+      <div class="contact-panel glass">
+        <p class="eyebrow centered" data-i18n="contact.eyebrow">Kapcsolat</p>
+        <h2 class="section-title" data-i18n="contact.title">Dolgozzunk együtt.</h2>
+        <p class="section-sub" data-i18n="contact.text">Nyitott vagyok gyakornoki és junior fejlesztői lehetőségekre Ho Si Minh-városban vagy távmunkában. Keress meg LinkedInen.</p>
+        <div class="contact-actions">
+          <a href="https://www.linkedin.com/in/molmardo/" target="_blank" rel="noopener" class="btn btn-primary"><i class="fa-brands fa-linkedin-in"></i> <span data-i18n="contact.linkedin">LinkedIn-profil megnyitása</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 
 <footer class="footer">
   <div class="wrap footer-inner">
-    <p>&copy; <span id="year"></span> Mark Molnar (molmardo). All rights reserved.</p>
+    <p>&copy; <span id="year"></span> Molnár Márk (molmardo). <span data-i18n="footer.rights">Minden jog fenntartva.</span></p>
     <div class="footer-social">
       <a href="https://www.linkedin.com/in/molmardo/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-      <a href="mailto:molnarmark2005@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
     </div>
   </div>
 </footer>
