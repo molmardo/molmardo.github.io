@@ -31,9 +31,7 @@ const translations = {
       tag2: 'Kiberbiztonság és hálózatvédelem',
       languagesLabel: 'Beszélt nyelvek',
       hungarian: 'Magyar',
-      hungarianLevel: 'Anyanyelvi szint',
-      english: 'Angol',
-      englishLevel: 'Szakmai munkanyelv'
+      english: 'Angol'
     },
     experience: {
       eyebrow: 'Gyakorlati iskolai tapasztalat',
@@ -189,9 +187,7 @@ const translations = {
       tag2: 'Cybersecurity & Network Defense',
       languagesLabel: 'Languages',
       hungarian: 'Hungarian',
-      hungarianLevel: 'Native or bilingual',
-      english: 'English',
-      englishLevel: 'Professional working proficiency'
+      english: 'English'
     },
     experience: {
       eyebrow: 'Practical school experience',

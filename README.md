@@ -12,7 +12,7 @@ An interactive bilingual portfolio featuring real-world web projects, software d
 
 <br>
 
-🌐 Hungarian & English · 🎴 Interactive 3D design · 💻 Real projects · 📱 Fully responsive
+🌐 Hungarian & English · 💻 Real projects · 📱 Fully responsive
 
 <br>
 
