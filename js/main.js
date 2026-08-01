@@ -229,7 +229,7 @@ const translations = {
     hero: {
       eyebrow: 'Mark Molnar · IT Student @ RMIT Vietnam',
       title1: 'Full-stack web solutions,',
-      title2: 'built with security in mind.',
+      title2: 'built with security in mind',
       description: 'I build modern web applications on the foundation of my five-year Hungarian <strong>Software Developer and Tester programme</strong>. I plan to continue my higher education in <strong>Cybersecurity and Network Defense</strong>.',
       projects: 'View projects',
       cvPdf: 'Save CV as PDF',
@@ -245,7 +245,7 @@ const translations = {
     },
     about: {
       eyebrow: 'About me',
-      title: 'European development foundations in an international university environment.',
+      title: 'European development foundations in an international university environment',
       p1: 'I earned my <strong>Software Developer and Tester qualification</strong> in Hungary through the five-year programme at BMSZC Neumann János Informatikai Technikum between 2020 and 2025.',
       p2: 'I am currently an IT undergraduate at Royal Melbourne Institute of Technology University Vietnam and work on Full-stack web applications. I plan to continue my higher education in <strong>Cybersecurity and Network Defense</strong>.',
       tag1: 'Software Developer and Tester',
