@@ -60,6 +60,7 @@
         <p class="hero-desc" data-i18n-html="hero.description">Modern webalkalmazásokat építek az ötéves magyarországi <strong>Szoftverfejlesztő és Tesztelő képzésem</strong> alapjaira támaszkodva. Felsőfokú tanulmányaimat a jövőben <strong>kiberbiztonság és hálózati védelem</strong> területén folytatom.</p>
         <div class="hero-actions">
           <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-diagram-project"></i> <span data-i18n="hero.projects">Projektek megtekintése</span></a>
+          <button type="button" class="btn btn-ghost" data-cv-print><i class="fa-solid fa-file-pdf"></i> <span data-i18n="hero.cvPdf">CV mentése PDF-ként</span></button>
           <a href="https://www.linkedin.com/in/molmardo/" target="_blank" rel="noopener" class="btn btn-ghost"><i class="fa-brands fa-linkedin-in"></i> <span data-i18n="hero.linkedin">Kapcsolódás LinkedInen</span></a>
         </div>
         <div class="hero-meta">
@@ -82,7 +83,7 @@
             <div class="code-box" data-i18n-html="profile.code">
               <span class="code-k">const</span> <span class="code-v">developer</span> = {<br>
               &nbsp;&nbsp;név: <span class="code-s">'Molnár Márk'</span>,<br>
-              &nbsp;&nbsp;szerep: <span class="code-s">'Junior fejlesztő / IT hallgató'</span>,<br>
+              &nbsp;&nbsp;szerep: <span class="code-s">'Junior fejlesztő / IT-hallgató'</span>,<br>
               &nbsp;&nbsp;egyetem: <span class="code-s">'Royal Melbourne Institute of Technology University Vietnam'</span>,<br>
               &nbsp;&nbsp;tervezettSzak: <span class="code-s">'Kiberbiztonság és hálózati védelem'</span>,<br>
               &nbsp;&nbsp;technológiák: [<span class="code-s">'Python'</span>, <span class="code-s">'C#'</span>, <span class="code-s">'Java'</span>, <span class="code-s">'PHP'</span>, <span class="code-s">'JS'</span>, <span class="code-s">'SQL'</span>],<br>
@@ -273,7 +274,7 @@
               <div class="icon"><i class="fa-solid fa-layer-group"></i></div>
               <div><span data-i18n="credentials.fullstack.label">Ötéves képzés · 2020–2025</span><h3 data-i18n="credentials.fullstack.title">Szoftverfejlesztő és Tesztelő</h3></div>
             </div>
-            <p data-i18n="credentials.fullstack.text">A BMSZC Neumann János Informatikai Technikumban szerzett szakképesítés az objektumorientált programozástól és full-stack webfejlesztéstől az adatbázis-kezelésen át a szoftvertesztelésig fogta át a fejlesztési folyamatot.</p>
+            <p data-i18n="credentials.fullstack.text">A BMSZC Neumann János Informatikai Technikumban szerzett szakképesítés az objektumorientált programozástól és Full-stack webfejlesztéstől az adatbázis-kezelésen át a szoftvertesztelésig fogta át a fejlesztési folyamatot.</p>
             <div class="credential-topics"><span>Frontend</span><span>Backend</span><span data-i18n="credentials.fullstack.topic2">Tesztelés</span><span data-i18n="credentials.fullstack.topic">Adatbázisok</span></div>
           </div>
         </article>
@@ -442,11 +443,170 @@
         <p class="section-sub" data-i18n="contact.text">Nyitott vagyok gyakornoki és junior fejlesztői lehetőségekre Ho Si Minh-városban vagy távmunkában. Keress meg LinkedInen.</p>
         <div class="contact-actions">
           <a href="https://www.linkedin.com/in/molmardo/" target="_blank" rel="noopener" class="btn btn-primary"><i class="fa-brands fa-linkedin-in"></i> <span data-i18n="contact.linkedin">LinkedIn-profil megnyitása</span></a>
+          <button type="button" class="btn btn-ghost" data-cv-print><i class="fa-solid fa-file-pdf"></i> <span data-i18n="contact.cvPdf">CV mentése PDF-ként</span></button>
+          <button type="button" class="btn btn-ghost" data-cv-word><i class="fa-solid fa-file-word"></i> <span data-i18n="contact.cvWord">Word CV letöltése</span></button>
         </div>
       </div>
     </div>
   </section>
 </main>
+
+<article class="cv-document" id="cvDocument" aria-hidden="true">
+  <section class="cv-sheet">
+    <header class="cv-header">
+      <div>
+        <p class="cv-kicker" data-i18n="cv.documentType">Önéletrajz</p>
+        <h1>Molnár Márk</h1>
+        <p class="cv-role" data-i18n="cv.role">IT-hallgató · Full-stack fejlesztő</p>
+      </div>
+      <div class="cv-contact-details">
+        <span>Ho Chi Minh City · Vietnam</span>
+        <a href="https://www.linkedin.com/in/molmardo/">linkedin.com/in/molmardo</a>
+        <a href="mailto:molnarmark2005@gmail.com">molnarmark2005@gmail.com</a>
+        <a href="https://molmardo.github.io/" data-i18n="cv.portfolioMore">Részletesebb információk: molmardo.github.io</a>
+        <span data-i18n="cv.languagePair">Magyar · Angol</span>
+      </div>
+    </header>
+
+    <section class="cv-summary">
+      <h2 data-i18n="cv.profile.title">Szakmai profil</h2>
+      <p data-i18n="cv.profile.text">Informatikushallgató és Szoftverfejlesztő és Tesztelő szakképesítéssel rendelkező junior fejlesztő vagyok. Éles webplatformok, önálló alkalmazások és csapatprojektek fejlesztésében szereztem tapasztalatot. Felsőfokú tanulmányaimat kiberbiztonság és hálózati védelem területén folytatom.</p>
+    </section>
+
+    <div class="cv-layout">
+      <aside class="cv-sidebar">
+        <section class="cv-section">
+          <h2 data-i18n="cv.skills.title">Technikai készségek</h2>
+          <div class="cv-skill-group">
+            <h3 data-i18n="cv.skills.languages">Programozási nyelvek</h3>
+            <p>Python · C# · Java · PHP · JavaScript · SQL</p>
+          </div>
+          <div class="cv-skill-group">
+            <h3 data-i18n="cv.skills.web">Webfejlesztés</h3>
+            <p>HTML5 · CSS3 · Bootstrap · Responsive Design · UI/UX</p>
+          </div>
+          <div class="cv-skill-group">
+            <h3 data-i18n="cv.skills.frameworks">Technológiák</h3>
+            <p>.NET · OpenCV · NumPy · Discord.py · REST/API</p>
+          </div>
+          <div class="cv-skill-group">
+            <h3 data-i18n="cv.skills.data">Adatok és fejlesztői eszközök</h3>
+            <p>MySQL · phpMyAdmin · Git · GitHub · VS Code</p>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2 data-i18n="cv.languages.title">Nyelvek</h2>
+          <div class="cv-language-item"><strong data-i18n="cv.languages.hungarian">Magyar</strong></div>
+          <div class="cv-language-item"><strong data-i18n="cv.languages.english">Angol</strong></div>
+        </section>
+
+        <section class="cv-section">
+          <h2 data-i18n="cv.tools.title">További eszközök</h2>
+          <div class="cv-skill-group">
+            <h3>Microsoft Office</h3>
+            <p>Word · Excel · PowerPoint · Outlook · Access · OneNote</p>
+          </div>
+          <div class="cv-skill-group">
+            <h3>Adobe Creative</h3>
+            <p>Photoshop · After Effects · Premiere Pro · Dreamweaver</p>
+          </div>
+        </section>
+      </aside>
+
+      <div class="cv-main-column">
+        <section class="cv-section">
+          <h2 data-i18n="cv.education.title">Tanulmányok és képesítések</h2>
+          <article class="cv-entry">
+            <div class="cv-entry-head"><h3>RMIT University Vietnam</h3><span data-i18n="cv.education.current">Jelenleg</span></div>
+            <p data-i18n="cv.education.rmit">Informatikai felsőfokú tanulmányok · tervezett szakirány: kiberbiztonság és hálózati védelem</p>
+          </article>
+          <article class="cv-entry">
+            <div class="cv-entry-head"><h3>BMSZC Neumann János Informatikai Technikum</h3><span>2020-2025</span></div>
+            <p data-i18n="cv.education.neumann">Szoftverfejlesztő és Tesztelő szakképesítés · ötéves technikumi képzés</p>
+          </article>
+          <article class="cv-entry">
+            <div class="cv-entry-head"><h3>ECDL · European Computer Driving Licence</h3><span>2023</span></div>
+            <p data-i18n="cv.education.ecdl">Felhasználói informatikai ismereteket és digitális írástudást igazoló tanúsítvány</p>
+          </article>
+        </section>
+
+        <section class="cv-section">
+          <h2 data-i18n="cv.experience.title">Gyakorlati tapasztalat</h2>
+          <article class="cv-entry">
+            <div class="cv-entry-head"><h3 data-i18n="cv.experience.neumannTitle">Programozási projektek és korrepetálás</h3><span>2020-2025</span></div>
+            <p class="cv-entry-place">BMSZC Neumann János Informatikai Technikum</p>
+            <ul>
+              <li data-i18n="cv.experience.neumann1">Tanévenként körülbelül öt csoportos, főként programozási projekt tervezése és megvalósítása.</li>
+              <li data-i18n="cv.experience.neumann2">Osztálytársak korrepetálása programozásból, hálózatokból, digitális kultúrából, informatikai alapokból és projektmunkából.</li>
+              <li data-i18n="cv.experience.neumann3">Több osztálytárs felkészítése az informatikaérettségire.</li>
+            </ul>
+          </article>
+          <article class="cv-entry">
+            <div class="cv-entry-head"><h3 data-i18n="cv.experience.supportTitle">Rendezvénytechnika és IT support</h3><span data-i18n="cv.experience.elementary">Általános iskolai időszak</span></div>
+            <ul>
+              <li data-i18n="cv.experience.support1">Iskolai rendezvények hangosítása, technikai lebonyolítása és videós anyagainak elkészítése csapatban.</li>
+              <li data-i18n="cv.experience.support2">A tanári kar támogatása hardveres, szoftveres és hálózati problémák megoldásában.</li>
+            </ul>
+          </article>
+        </section>
+      </div>
+    </div>
+
+    <footer class="cv-footer"><span>Molnár Márk · CV</span><span>1 / 2</span></footer>
+  </section>
+
+  <section class="cv-sheet cv-project-sheet">
+    <header class="cv-page-header">
+      <div><p class="cv-kicker" data-i18n="cv.projects.kicker">Portfólió</p><h1 data-i18n="cv.projects.title">Kiemelt projektek</h1></div>
+    </header>
+
+    <div class="cv-project-grid">
+      <article class="cv-project">
+        <div class="cv-project-head"><h2>rdr2003.hu</h2><span data-i18n="cv.projects.production">Éles projekt</span></div>
+        <p data-i18n="cv.projects.rdr">Reszponzív üzleti webplatform többnyelvű felülettel, tranzakciós levélküldéssel és strukturált adatbázis-kezeléssel.</p>
+        <strong>PHP · MySQL · JavaScript · HTML/CSS · SEO</strong>
+      </article>
+      <article class="cv-project">
+        <div class="cv-project-head"><h2>saigonandmore.hu</h2><span data-i18n="cv.projects.production">Éles projekt</span></div>
+        <p data-i18n="cv.projects.saigon">Kereskedelmi webplatform szerveroldali PHP-logikával, optimalizált adatbázis-architektúrával és reszponzív felülettel.</p>
+        <strong>PHP · MySQL · Bootstrap · JavaScript · UI/UX</strong>
+      </article>
+      <article class="cv-project">
+        <div class="cv-project-head"><h2>csaladescitrom.hu</h2><span data-i18n="cv.projects.custom">Egyedi weboldal</span></div>
+        <p data-i18n="cv.projects.citrom">Összetett webes projekt teljes körű tervezése és kivitelezése a specifikációtól az élesítésig, saját strukturált kódbázissal.</p>
+        <strong>HTML5 · CSS3 · PHP · JavaScript</strong>
+      </article>
+      <article class="cv-project">
+        <div class="cv-project-head"><h2>Rubber Duck Discord Bot</h2><span data-i18n="cv.projects.independent">Önálló projekt</span></div>
+        <p data-i18n="cv.projects.rubberduck">Eseményvezérelt, aszinkron Discord bot dinamikus magyar-angol nyelvváltással, parancsértelmezéssel és állapotkezeléssel.</p>
+        <strong>Python · Discord.py · Discord API · Async</strong>
+      </article>
+      <article class="cv-project">
+        <div class="cv-project-head"><h2 data-i18n="cv.projects.visionTitle">Valós idejű számítógépes látás</h2><span data-i18n="cv.projects.academic">Iskolai projekt</span></div>
+        <p data-i18n="cv.projects.vision">Videóstream-feldolgozás, Haar Cascade-alapú arcdetektálás, létszámlálás, saját képszűrők, anonimizálás és valós idejű HUD.</p>
+        <strong>Python · OpenCV · NumPy · Computer Vision</strong>
+      </article>
+      <article class="cv-project">
+        <div class="cv-project-head"><h2 data-i18n="cv.projects.additionalTitle">További iskolai projektek</h2><span data-i18n="cv.projects.team">Egyéni és csapatmunka</span></div>
+        <p data-i18n="cv.projects.additional">Loligochi C# virtuális kisállat-játék, reszponzív utazástervező és foglalási platform, valamint kiemelt elismerést kapott informatikai hardverportál.</p>
+        <strong>C# · .NET · JavaScript · Bootstrap · Git</strong>
+      </article>
+    </div>
+
+    <section class="cv-project-links">
+      <h2 data-i18n="cv.projects.linksTitle">Publikus projektek</h2>
+      <p>rdr2003.hu · saigonandmore.hu · csaladescitrom.hu · staticfile-f3cde.wasmer.app · github.com/molmardo/NetworkTechPython</p>
+    </section>
+
+    <section class="cv-focus">
+      <h2 data-i18n="cv.focus.title">Szakmai fókusz</h2>
+      <p data-i18n="cv.focus.text">Full-stack fejlesztés, biztonságtudatos webes megoldások, kiberbiztonság és hálózati védelem.</p>
+    </section>
+
+    <footer class="cv-footer"><span>Molnár Márk · CV</span><span>2 / 2</span></footer>
+  </section>
+</article>
 
 <footer class="footer">
   <div class="wrap footer-inner">

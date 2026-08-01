@@ -1255,6 +1255,322 @@ button:focus-visible,
     transform: translateY(-3px);
 }
 
+.cv-document {
+    display: none;
+}
+
+@media print {
+    @page {
+        size: A4;
+        margin: 0;
+    }
+
+    html,
+    body {
+        width: 210mm;
+        min-height: 0;
+        margin: 0;
+        padding: 0;
+        background: #ffffff;
+        color: #172033;
+        overflow: visible;
+    }
+
+    body > :not(#cvDocument) {
+        display: none !important;
+    }
+
+    #cvDocument {
+        display: block !important;
+        width: 210mm;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #172033;
+        background: #ffffff;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .cv-sheet {
+        position: relative;
+        width: 210mm;
+        height: 296mm;
+        min-height: 0;
+        padding: 12mm 14mm 10mm;
+        margin: 0;
+        background: #ffffff;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        break-after: auto;
+        page-break-after: auto;
+    }
+
+    .cv-sheet:not(:last-child) {
+        break-after: page;
+        page-break-after: always;
+    }
+
+    .cv-header,
+    .cv-page-header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 12mm;
+        padding-bottom: 6mm;
+        border-bottom: 1.5pt solid #00a9b7;
+    }
+
+    .cv-header h1,
+    .cv-page-header h1 {
+        margin: 0;
+        color: #101827;
+        font-size: 25pt;
+        line-height: 1;
+        letter-spacing: -0.03em;
+    }
+
+    .cv-kicker {
+        margin: 0 0 2mm;
+        color: #008b99;
+        font-size: 7.5pt;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+    }
+
+    .cv-role {
+        margin: 2.5mm 0 0;
+        color: #46536a;
+        font-size: 10.5pt;
+        font-weight: 600;
+    }
+
+    .cv-contact-details {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1.2mm;
+        color: #46536a;
+        font-size: 8pt;
+        line-height: 1.35;
+    }
+
+    .cv-contact-details a,
+    .cv-page-header a {
+        color: #007f8c;
+        text-decoration: none;
+    }
+
+    .cv-summary {
+        margin: 6mm 0;
+        padding: 4mm 5mm;
+        border-left: 3pt solid #00a9b7;
+        background: #f2f8f9;
+    }
+
+    .cv-summary h2,
+    .cv-section > h2,
+    .cv-project-links h2,
+    .cv-focus h2 {
+        margin: 0 0 2mm;
+        color: #008b99;
+        font-size: 9pt;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+    }
+
+    .cv-summary p {
+        margin: 0;
+        color: #344057;
+        font-size: 8.6pt;
+        line-height: 1.5;
+    }
+
+    .cv-layout {
+        display: grid;
+        grid-template-columns: 61mm minmax(0, 1fr);
+        gap: 8mm;
+        flex: 1;
+    }
+
+    .cv-sidebar {
+        padding-right: 7mm;
+        border-right: 1pt solid #d8e0e8;
+    }
+
+    .cv-section {
+        margin-bottom: 6mm;
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .cv-skill-group {
+        margin-bottom: 3.2mm;
+    }
+
+    .cv-skill-group h3,
+    .cv-entry h3 {
+        margin: 0 0 1mm;
+        color: #172033;
+        font-size: 8.7pt;
+        line-height: 1.25;
+    }
+
+    .cv-skill-group p,
+    .cv-language-item span,
+    .cv-entry p,
+    .cv-entry li {
+        color: #4c5870;
+        font-size: 7.8pt;
+        line-height: 1.45;
+    }
+
+    .cv-skill-group p,
+    .cv-entry p {
+        margin: 0;
+    }
+
+    .cv-language-item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2.6mm;
+    }
+
+    .cv-language-item strong {
+        color: #172033;
+        font-size: 8.5pt;
+    }
+
+    .cv-entry {
+        margin-bottom: 5mm;
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .cv-entry-head {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 4mm;
+    }
+
+    .cv-entry-head span {
+        flex: 0 0 auto;
+        color: #008b99;
+        font-size: 7.2pt;
+        font-weight: 700;
+    }
+
+    .cv-entry-place {
+        margin-bottom: 1.5mm !important;
+        color: #008b99 !important;
+        font-weight: 600;
+    }
+
+    .cv-entry ul {
+        margin: 1.7mm 0 0;
+        padding-left: 4mm;
+        list-style: disc;
+    }
+
+    .cv-entry li {
+        margin-bottom: 1mm;
+    }
+
+    .cv-page-header {
+        align-items: center;
+        margin-bottom: 8mm;
+    }
+
+    .cv-page-header a {
+        font-size: 8.5pt;
+        font-weight: 700;
+    }
+
+    .cv-project-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 5mm;
+    }
+
+    .cv-project {
+        min-height: 48mm;
+        padding: 5mm;
+        border: 1pt solid #d8e0e8;
+        border-top: 3pt solid #00a9b7;
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .cv-project-head {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 3mm;
+        margin-bottom: 3mm;
+    }
+
+    .cv-project h2 {
+        margin: 0;
+        color: #172033;
+        font-size: 10pt;
+        line-height: 1.25;
+    }
+
+    .cv-project-head span {
+        flex: 0 0 auto;
+        padding: 1mm 2mm;
+        border-radius: 20mm;
+        background: #e7f6f7;
+        color: #007f8c;
+        font-size: 6.5pt;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .cv-project p {
+        margin: 0 0 3mm;
+        color: #4c5870;
+        font-size: 7.8pt;
+        line-height: 1.45;
+    }
+
+    .cv-project strong {
+        color: #007f8c;
+        font-size: 7pt;
+        line-height: 1.4;
+    }
+
+    .cv-project-links,
+    .cv-focus {
+        margin-top: 6mm;
+        padding: 4mm 5mm;
+        background: #f2f8f9;
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .cv-project-links p,
+    .cv-focus p {
+        margin: 0;
+        color: #344057;
+        font-size: 7.8pt;
+        line-height: 1.45;
+    }
+
+    .cv-footer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: auto;
+        padding-top: 4mm;
+        border-top: 1pt solid #d8e0e8;
+        color: #78849a;
+        font-size: 7pt;
+    }
+}
+
 .float-orb {
     position: absolute;
     border-radius: 50%;

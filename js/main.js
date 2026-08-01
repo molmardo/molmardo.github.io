@@ -12,6 +12,7 @@ const translations = {
       title2: 'biztonságtudatos szemlélettel',
       description: 'Modern webalkalmazásokat építek az ötéves magyarországi <strong>Szoftverfejlesztő és Tesztelő képzésem</strong> alapjaira támaszkodva. Felsőfokú tanulmányaimat a jövőben <strong>kiberbiztonság és hálózati védelem</strong> területén folytatom.',
       projects: 'Projektek megtekintése',
+      cvPdf: 'CV mentése PDF-ként',
       linkedin: 'Kapcsolódás LinkedInen',
       stack: 'Fő technológiák',
       university: 'Egyetem',
@@ -20,7 +21,7 @@ const translations = {
     },
     profile: {
       subtitle: 'IT-hallgató · Full-stack fejlesztő',
-      code: '<span class="code-k">const</span> <span class="code-v">developer</span> = {<br>&nbsp;&nbsp;név: <span class="code-s">\'Molnár Márk\'</span>,<br>&nbsp;&nbsp;szerep: <span class="code-s">\'Junior fejlesztő / IT hallgató\'</span>,<br>&nbsp;&nbsp;egyetem: <span class="code-s">\'RMIT University Vietnam\'</span>,<br>&nbsp;&nbsp;tervezettSzak: <span class="code-s">\'Kiberbiztonság és hálózati védelem\'</span>,<br>&nbsp;&nbsp;technológiák: [<span class="code-s">\'Python\'</span>, <span class="code-s">\'C#\'</span>, <span class="code-s">\'Java\'</span>, <span class="code-s">\'PHP\'</span>, <span class="code-s">\'JS\'</span>, <span class="code-s">\'SQL\'</span>],<br>&nbsp;&nbsp;státusz: <span class="code-s">\'Nyitott gyakornoki és junior lehetőségekre\'</span><br>};'
+      code: '<span class="code-k">const</span> <span class="code-v">developer</span> = {<br>&nbsp;&nbsp;név: <span class="code-s">\'Molnár Márk\'</span>,<br>&nbsp;&nbsp;szerep: <span class="code-s">\'Junior fejlesztő / IT-hallgató\'</span>,<br>&nbsp;&nbsp;egyetem: <span class="code-s">\'RMIT University Vietnam\'</span>,<br>&nbsp;&nbsp;tervezettSzak: <span class="code-s">\'Kiberbiztonság és hálózati védelem\'</span>,<br>&nbsp;&nbsp;technológiák: [<span class="code-s">\'Python\'</span>, <span class="code-s">\'C#\'</span>, <span class="code-s">\'Java\'</span>, <span class="code-s">\'PHP\'</span>, <span class="code-s">\'JS\'</span>, <span class="code-s">\'SQL\'</span>],<br>&nbsp;&nbsp;státusz: <span class="code-s">\'Nyitott gyakornoki és junior lehetőségekre\'</span><br>};'
     },
     about: {
       eyebrow: 'Rólam',
@@ -81,7 +82,7 @@ const translations = {
       fullstack: {
         label: 'Ötéves képzés · 2020–2025',
         title: 'Szoftverfejlesztő és Tesztelő',
-        text: 'A BMSZC Neumann János Informatikai Technikumban szerzett szakképesítés az objektumorientált programozástól és full-stack webfejlesztéstől az adatbázis-kezelésen át a szoftvertesztelésig fogta át a fejlesztési folyamatot.',
+        text: 'A BMSZC Neumann János Informatikai Technikumban szerzett szakképesítés az objektumorientált programozástól és Full-stack webfejlesztéstől az adatbázis-kezelésen át a szoftvertesztelésig fogta át a fejlesztési folyamatot.',
         topic: 'Adatbázisok',
         topic2: 'Tesztelés'
       }
@@ -146,7 +147,70 @@ const translations = {
         teamwork: 'Csapatmunka'
       }
     },
-    contact: { eyebrow: 'Kapcsolat', title: 'Dolgozzunk együtt.', text: 'Nyitott vagyok gyakornoki és junior fejlesztői lehetőségekre Ho Si Minh-városban vagy távmunkában. Keress meg LinkedInen.', linkedin: 'LinkedIn-profil megnyitása' },
+    cv: {
+      documentType: 'Önéletrajz',
+      role: 'IT-hallgató · Full-stack fejlesztő',
+      languagePair: 'Magyar · Angol',
+      portfolioMore: 'Részletesebb információk: molmardo.github.io',
+      profile: {
+        title: 'Szakmai profil',
+        text: 'Informatikushallgató és Szoftverfejlesztő és Tesztelő szakképesítéssel rendelkező junior fejlesztő vagyok. Éles webplatformok, önálló alkalmazások és csapatprojektek fejlesztésében szereztem tapasztalatot. Felsőfokú tanulmányaimat kiberbiztonság és hálózati védelem területén folytatom.'
+      },
+      skills: {
+        title: 'Technikai készségek',
+        languages: 'Programozási nyelvek',
+        web: 'Webfejlesztés',
+        frameworks: 'Technológiák',
+        data: 'Adatok és fejlesztői eszközök'
+      },
+      languages: {
+        title: 'Nyelvek',
+        hungarian: 'Magyar',
+        english: 'Angol'
+      },
+      tools: { title: 'További eszközök' },
+      education: {
+        title: 'Tanulmányok és képesítések',
+        current: 'Jelenleg',
+        rmit: 'Informatikai felsőfokú tanulmányok · tervezett szakirány: kiberbiztonság és hálózati védelem',
+        neumann: 'Szoftverfejlesztő és Tesztelő szakképesítés · ötéves technikumi képzés',
+        ecdl: 'Felhasználói informatikai ismereteket és digitális írástudást igazoló tanúsítvány'
+      },
+      experience: {
+        title: 'Gyakorlati tapasztalat',
+        neumannTitle: 'Programozási projektek és korrepetálás',
+        neumann1: 'Tanévenként körülbelül öt csoportos, főként programozási projekt tervezése és megvalósítása.',
+        neumann2: 'Osztálytársak korrepetálása programozásból, hálózatokból, digitális kultúrából, informatikai alapokból és projektmunkából.',
+        neumann3: 'Több osztálytárs felkészítése az informatikaérettségire.',
+        supportTitle: 'Rendezvénytechnika és IT support',
+        elementary: 'Általános iskolai időszak',
+        support1: 'Iskolai rendezvények hangosítása, technikai lebonyolítása és videós anyagainak elkészítése csapatban.',
+        support2: 'A tanári kar támogatása hardveres, szoftveres és hálózati problémák megoldásában.'
+      },
+      projects: {
+        kicker: 'Portfólió',
+        title: 'Kiemelt projektek',
+        production: 'Éles projekt',
+        custom: 'Egyedi weboldal',
+        independent: 'Önálló projekt',
+        academic: 'Iskolai projekt',
+        team: 'Egyéni és csapatmunka',
+        rdr: 'Reszponzív üzleti webplatform többnyelvű felülettel, tranzakciós levélküldéssel és strukturált adatbázis-kezeléssel.',
+        saigon: 'Kereskedelmi webplatform szerveroldali PHP-logikával, optimalizált adatbázis-architektúrával és reszponzív felülettel.',
+        citrom: 'Összetett webes projekt teljes körű tervezése és kivitelezése a specifikációtól az élesítésig, saját strukturált kódbázissal.',
+        rubberduck: 'Eseményvezérelt, aszinkron Discord bot dinamikus magyar-angol nyelvváltással, parancsértelmezéssel és állapotkezeléssel.',
+        visionTitle: 'Valós idejű számítógépes látás',
+        vision: 'Videóstream-feldolgozás, Haar Cascade-alapú arcdetektálás, létszámlálás, saját képszűrők, anonimizálás és valós idejű HUD.',
+        additionalTitle: 'További iskolai projektek',
+        additional: 'Loligochi C# virtuális kisállat-játék, reszponzív utazástervező és foglalási platform, valamint kiemelt elismerést kapott informatikai hardverportál.',
+        linksTitle: 'Publikus projektek'
+      },
+      focus: {
+        title: 'Szakmai fókusz',
+        text: 'Full-stack fejlesztés, biztonságtudatos webes megoldások, kiberbiztonság és hálózati védelem.'
+      }
+    },
+    contact: { eyebrow: 'Kapcsolat', title: 'Dolgozzunk együtt.', text: 'Nyitott vagyok gyakornoki és junior fejlesztői lehetőségekre Ho Si Minh-városban vagy távmunkában. Keress meg LinkedInen.', linkedin: 'LinkedIn-profil megnyitása', cvPdf: 'CV mentése PDF-ként', cvWord: 'Word CV letöltése' },
     footer: { rights: 'Minden jog fenntartva.' },
     terminal: [
       { cmd: 'whoami', out: 'Molnár Márk — informatikushallgató @ Royal Melbourne Institute of Technology Vietnam' },
@@ -168,6 +232,7 @@ const translations = {
       title2: 'built with security in mind.',
       description: 'I build modern web applications on the foundation of my five-year Hungarian <strong>Software Developer and Tester programme</strong>. I plan to continue my higher education in <strong>Cybersecurity and Network Defense</strong>.',
       projects: 'View projects',
+      cvPdf: 'Save CV as PDF',
       linkedin: 'Connect on LinkedIn',
       stack: 'Primary stack',
       university: 'University',
@@ -182,7 +247,7 @@ const translations = {
       eyebrow: 'About me',
       title: 'European development foundations in an international university environment.',
       p1: 'I earned my <strong>Software Developer and Tester qualification</strong> in Hungary through the five-year programme at BMSZC Neumann János Informatikai Technikum between 2020 and 2025.',
-      p2: 'I am currently an IT undergraduate at Royal Melbourne Institute of Technology University Vietnam and work on full-stack web applications. I plan to continue my higher education in <strong>Cybersecurity and Network Defense</strong>.',
+      p2: 'I am currently an IT undergraduate at Royal Melbourne Institute of Technology University Vietnam and work on Full-stack web applications. I plan to continue my higher education in <strong>Cybersecurity and Network Defense</strong>.',
       tag1: 'Software Developer and Tester',
       tag2: 'Cybersecurity & Network Defense',
       languagesLabel: 'Languages',
@@ -302,7 +367,70 @@ const translations = {
         teamwork: 'Teamwork'
       }
     },
-    contact: { eyebrow: 'Get in touch', title: 'Let\'s work together.', text: 'I am open to internship and junior developer opportunities in Ho Chi Minh City or remotely. Connect with me on LinkedIn.', linkedin: 'Open LinkedIn profile' },
+    cv: {
+      documentType: 'Curriculum Vitae',
+      role: 'IT Student · Full-Stack Developer',
+      languagePair: 'Hungarian · English',
+      portfolioMore: 'More information: molmardo.github.io',
+      profile: {
+        title: 'Professional profile',
+        text: 'I am an IT student and junior developer with a Software Developer and Tester qualification. I have experience building production web platforms, independent applications and collaborative academic projects. My future higher-education focus is Cybersecurity and Network Defense.'
+      },
+      skills: {
+        title: 'Technical skills',
+        languages: 'Programming languages',
+        web: 'Web development',
+        frameworks: 'Technologies',
+        data: 'Data and development tools'
+      },
+      languages: {
+        title: 'Languages',
+        hungarian: 'Hungarian',
+        english: 'English'
+      },
+      tools: { title: 'Additional tools' },
+      education: {
+        title: 'Education and qualifications',
+        current: 'Current',
+        rmit: 'Undergraduate IT studies · planned specialization: Cybersecurity and Network Defense',
+        neumann: 'Software Developer and Tester qualification · five-year technical-school programme',
+        ecdl: 'Certification in practical computer-user skills and digital literacy'
+      },
+      experience: {
+        title: 'Practical experience',
+        neumannTitle: 'Programming projects and peer tutoring',
+        neumann1: 'Planned and delivered approximately five collaborative, primarily programming-focused projects each academic year.',
+        neumann2: 'Tutored classmates in programming, networking, digital culture, IT fundamentals and project work.',
+        neumann3: 'Prepared several classmates for the Hungarian IT school-leaving examination.',
+        supportTitle: 'Event technology and IT support',
+        elementary: 'Elementary school years',
+        support1: 'Worked in a team on event sound, technical delivery and video production.',
+        support2: 'Supported teaching staff with hardware, software and networking problems.'
+      },
+      projects: {
+        kicker: 'Portfolio',
+        title: 'Selected projects',
+        production: 'Production project',
+        custom: 'Custom website',
+        independent: 'Independent project',
+        academic: 'Academic project',
+        team: 'Individual and team work',
+        rdr: 'Responsive business web platform with multilingual options, transactional email handling and structured database management.',
+        saigon: 'Commercial web platform with server-side PHP logic, an optimized database architecture and a responsive interface.',
+        citrom: 'End-to-end design and delivery of a complex web project from specification to production using a custom structured codebase.',
+        rubberduck: 'Event-driven asynchronous Discord bot with dynamic Hungarian-English language switching, command parsing and state management.',
+        visionTitle: 'Real-time computer vision',
+        vision: 'Live video processing, Haar Cascade face detection, person counting, custom image filters, anonymization and a real-time HUD.',
+        additionalTitle: 'Additional academic projects',
+        additional: 'Loligochi C# virtual pet game, a responsive travel planning and booking platform, and a computer hardware portal that received special recognition.',
+        linksTitle: 'Public projects'
+      },
+      focus: {
+        title: 'Professional focus',
+        text: 'Full-stack development, security-conscious web solutions, Cybersecurity and Network Defense.'
+      }
+    },
+    contact: { eyebrow: 'Get in touch', title: 'Let\'s work together.', text: 'I am open to internship and junior developer opportunities in Ho Chi Minh City or remotely. Connect with me on LinkedIn.', linkedin: 'Open LinkedIn profile', cvPdf: 'Save CV as PDF', cvWord: 'Download Word CV' },
     footer: { rights: 'All rights reserved.' },
     terminal: [
       { cmd: 'whoami', out: 'Mark Molnar — IT Student @ RMIT Vietnam' },
@@ -384,6 +512,175 @@ document.querySelectorAll('[data-nav]').forEach(link => {
 document.querySelectorAll('[data-language]').forEach(button => {
   button.addEventListener('click', () => applyLanguage(button.dataset.language));
 });
+
+const cvDocument = document.getElementById('cvDocument');
+let titleBeforePrint = '';
+
+function cvFilename(extension) {
+  return currentLanguage === 'hu' ? `Molnar_Mark_CV_HU.${extension}` : `Mark_Molnar_CV_EN.${extension}`;
+}
+
+function printCv() {
+  titleBeforePrint = document.title;
+  document.title = currentLanguage === 'hu' ? 'Molnár Márk - Önéletrajz' : 'Mark Molnar - CV';
+  window.print();
+  setTimeout(() => {
+    if (!titleBeforePrint) return;
+    document.title = titleBeforePrint;
+    titleBeforePrint = '';
+  }, 500);
+}
+
+window.addEventListener('afterprint', () => {
+  document.title = titleBeforePrint || translations[currentLanguage].meta.title;
+  titleBeforePrint = '';
+});
+
+const cvWordStyles = `
+@page { size: A4; margin: 28pt; }
+body { margin: 0; color: #172033; font-family: Arial, Helvetica, sans-serif; font-size: 8pt; line-height: 1.28; }
+.cv-sheet { page-break-after: auto; overflow: hidden; }
+.cv-sheet + .cv-sheet { page-break-before: always; }
+.cv-header, .cv-page-header, .cv-word-header-table { border-bottom: 2pt solid #00a9b7; padding-bottom: 8pt; margin-bottom: 10pt; }
+.cv-header h1, .cv-page-header h1, .cv-word-header-table h1 { margin: 0; color: #101827; font-size: 22pt; }
+.cv-word-header-table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+.cv-word-header-table td { width: 50%; vertical-align: bottom; }
+.cv-word-header-table td:last-child { text-align: right; }
+.cv-project-sheet .cv-page-header { page-break-inside: avoid; }
+.cv-kicker { margin: 0 0 4pt; color: #008b99; font-size: 8pt; font-weight: bold; text-transform: uppercase; }
+.cv-role { margin: 3pt 0 0; color: #46536a; font-size: 10pt; font-weight: bold; }
+.cv-contact-details { margin: 0; color: #46536a; }
+.cv-contact-details span, .cv-contact-details a { display: block; }
+.cv-contact-details a, .cv-page-header a { color: #007f8c; }
+.cv-summary, .cv-project-links, .cv-focus { background: #f2f8f9; border-left: 3pt solid #00a9b7; margin: 9pt 0; padding: 7pt 9pt; }
+.cv-project-links, .cv-focus { clear: both; }
+.cv-summary h2, .cv-section > h2, .cv-project-links h2, .cv-focus h2 { margin: 0 0 7pt; color: #008b99; font-size: 10pt; text-transform: uppercase; }
+.cv-summary p, .cv-skill-group p, .cv-entry p, .cv-project p, .cv-project-links p, .cv-focus p { margin: 0; color: #4c5870; }
+.cv-layout { width: 100%; overflow: hidden; }
+.cv-sidebar { float: left; width: 29%; padding-right: 14pt; border-right: 1pt solid #d8e0e8; }
+.cv-main-column { margin-left: 34%; }
+.cv-layout-table, .cv-project-table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+.cv-layout-table td, .cv-project-table td { vertical-align: top; }
+.cv-sidebar-cell { width: 30%; padding-right: 14pt; border-right: 1pt solid #d8e0e8; }
+.cv-main-cell { padding-left: 18pt; }
+.cv-section { margin-bottom: 12pt; }
+.cv-skill-group { margin-bottom: 6pt; }
+.cv-skill-group h3, .cv-entry h3 { margin: 0 0 3pt; color: #172033; font-size: 10pt; }
+.cv-language-item { margin-bottom: 5pt; }
+.cv-language-item strong, .cv-language-item span { display: block; }
+.cv-tools-compact { color: #4c5870; font-size: 7.5pt; line-height: 1.4; }
+.cv-entry { margin-bottom: 7pt; }
+.cv-entry-head { border-bottom: 1pt solid #d8e0e8; padding-bottom: 3pt; }
+.cv-entry-head h3 { display: inline; }
+.cv-entry-head span { float: right; color: #008b99; font-size: 8pt; font-weight: bold; }
+.cv-entry ul { margin: 5pt 0 0 16pt; padding: 0; }
+.cv-entry p, .cv-entry li { font-size: 7.6pt; line-height: 1.28; }
+.cv-project-grid { width: 100%; overflow: hidden; }
+.cv-project { float: left; width: 43%; min-height: 108pt; border: 1pt solid #d8e0e8; border-top: 3pt solid #00a9b7; margin: 0 0 9pt; padding: 9pt; page-break-inside: avoid; }
+.cv-project:nth-child(even) { float: right; }
+.cv-project-table td { width: 50%; padding: 0 5pt 9pt; }
+.cv-project-table .cv-project { float: none; width: auto; min-height: 108pt; margin: 0; }
+.cv-project-head h2 { display: inline; margin: 0; color: #172033; font-size: 12pt; }
+.cv-project-head span { float: right; color: #007f8c; font-size: 7pt; font-weight: bold; text-transform: uppercase; }
+.cv-project p { margin: 8pt 0; }
+.cv-project strong { color: #007f8c; font-size: 8pt; }
+.cv-footer { clear: both; border-top: 1pt solid #d8e0e8; margin-top: 15pt; padding-top: 7pt; color: #78849a; font-size: 8pt; }
+.cv-footer span:last-child { float: right; }
+`;
+
+function wordCvMarkup() {
+  const clone = cvDocument.cloneNode(true);
+  const toolsSection = clone.querySelector('.cv-sidebar .cv-section:last-child');
+  const toolsTitle = toolsSection.querySelector('h2');
+  const educationEntries = [...clone.querySelectorAll('.cv-main-column .cv-section:first-child .cv-entry')];
+  const ecdlEntry = educationEntries[educationEntries.length - 1];
+  const ecdlHeading = ecdlEntry.querySelector('h3').textContent;
+  const ecdlDate = ecdlEntry.querySelector('span').textContent;
+  let toolsText = [...toolsSection.querySelectorAll('.cv-skill-group')].map(group => `${group.querySelector('h3').textContent}: ${group.querySelector('p').textContent}`).join(' | ');
+  toolsText += ` | ${ecdlHeading} (${ecdlDate})`;
+  ecdlEntry.remove();
+  const toolsParagraph = document.createElement('p');
+  toolsParagraph.className = 'cv-tools-compact';
+  toolsParagraph.textContent = toolsText;
+  toolsSection.replaceChildren(toolsTitle, toolsParagraph);
+  clone.querySelector('.cv-focus').remove();
+  clone.querySelectorAll('.cv-entry-head').forEach(heading => {
+    const title = heading.querySelector('h3');
+    const date = heading.querySelector('span');
+    if (date) {
+      title.append(` | ${date.textContent}`);
+      date.remove();
+    }
+  });
+  clone.querySelectorAll('.cv-footer').forEach(footer => footer.remove());
+  clone.querySelector('.cv-page-header .cv-kicker').remove();
+
+  clone.querySelectorAll('.cv-header').forEach(header => {
+    const table = document.createElement('table');
+    const body = document.createElement('tbody');
+    const row = document.createElement('tr');
+    [...header.children].forEach(child => {
+      const cell = document.createElement('td');
+      cell.appendChild(child);
+      row.appendChild(cell);
+    });
+    body.appendChild(row);
+    table.appendChild(body);
+    table.className = 'cv-word-header-table';
+    header.replaceWith(table);
+  });
+
+  const layout = clone.querySelector('.cv-layout');
+  const layoutTable = document.createElement('table');
+  const layoutBody = document.createElement('tbody');
+  const layoutRow = document.createElement('tr');
+  const sidebarCell = document.createElement('td');
+  const mainCell = document.createElement('td');
+  sidebarCell.className = 'cv-sidebar-cell';
+  mainCell.className = 'cv-main-cell';
+  sidebarCell.appendChild(layout.querySelector('.cv-sidebar'));
+  mainCell.appendChild(layout.querySelector('.cv-main-column'));
+  layoutRow.append(sidebarCell, mainCell);
+  layoutBody.appendChild(layoutRow);
+  layoutTable.appendChild(layoutBody);
+  layoutTable.className = 'cv-layout-table';
+  layout.replaceWith(layoutTable);
+
+  const projectGrid = clone.querySelector('.cv-project-grid');
+  const projectCards = [...projectGrid.querySelectorAll('.cv-project')];
+  const projectTable = document.createElement('table');
+  const projectBody = document.createElement('tbody');
+  for (let index = 0; index < projectCards.length; index += 2) {
+    const row = document.createElement('tr');
+    const firstCell = document.createElement('td');
+    const secondCell = document.createElement('td');
+    firstCell.appendChild(projectCards[index]);
+    if (projectCards[index + 1]) secondCell.appendChild(projectCards[index + 1]);
+    row.append(firstCell, secondCell);
+    projectBody.appendChild(row);
+  }
+  projectTable.appendChild(projectBody);
+  projectTable.className = 'cv-project-table';
+  projectGrid.replaceWith(projectTable);
+  return clone.innerHTML;
+}
+
+function downloadWordCv() {
+  const language = currentLanguage === 'hu' ? 'hu' : 'en';
+  const source = `\ufeff<!DOCTYPE html><html lang="${language}"><head><meta charset="utf-8"><title>${cvFilename('doc').replace('.doc', '')}</title><style>${cvWordStyles}</style></head><body>${wordCvMarkup()}</body></html>`;
+  const blob = new Blob([source], { type: 'application/msword;charset=utf-8' });
+  const link = document.createElement('a');
+  const url = URL.createObjectURL(blob);
+  link.href = url;
+  link.download = cvFilename('doc');
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+document.querySelectorAll('[data-cv-print]').forEach(button => button.addEventListener('click', printCv));
+document.querySelectorAll('[data-cv-word]').forEach(button => button.addEventListener('click', downloadWordCv));
 
 function typeTerminal() {
   const body = document.getElementById('terminalBody');
